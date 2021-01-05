@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Service
+metadata:
+ labels:
+  app: counter-poller
+ name: server
+spec:
+ ports:
+ - name: webserver
+   port: 8080
+   protocol: TCP
+ type: ClusterIP
+ selector:
+  tier: middleware
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: counter-poller
+    tier: middleware
+  name: server
+spec:
+  containers:
+  - image: lrakai/microservices:server-v1
+    name: server 
+    imagePullPolicy: IfNotPresent
+    ports:
+    - containerPort: 8080
+    env:
+    - name: REDIS_URL
+      # ----- nameof service_SERVICE_HOST :SERVCIE_PORT --> this is environment variable service discovery way
+      value: redis://$(BACKEND_SERVICE_HOST):$(BACKEND_SERVICE_PORT_REDIS)

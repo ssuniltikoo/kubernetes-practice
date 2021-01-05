@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    app: pvc-pod
+  name: box
+spec:
+  volumes:
+  - name: data
+    persistentVolumeClaim:
+     claimName: temp-pvc
+  containers:
+  - image: busybox
+    name: box
+    resources: {}
+    args:
+    - bin/sh
+    - -c
+    - sleep 3600
+    volumeMounts:
+    - name: data
+      mountPath: "etc/foo"
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}

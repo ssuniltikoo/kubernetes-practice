@@ -1,0 +1,18 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: box
+spec:
+  completions: 5
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: busybox
+        name: box
+        command: ["bin/sh" , "-c", "a=10; b=5; if [ $a -le $b ]; then echo 'a is amall'; else echo 'b is samllaa'; fi" ] 
+        resources: {}
+      restartPolicy: Never
+status: {}

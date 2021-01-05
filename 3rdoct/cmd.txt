@@ -1,0 +1,919 @@
+    1  pwd
+    2  cd Desktop/
+    3  ls
+    4  cd git
+    5  ls
+    6  cd intro-to-k8s/
+    7  ls
+    8  cd src
+    9  ls
+   10  minikube addons list
+   11  minikube addon metrcs-server disabled
+   12  minikube addons metrics-server disabled
+   13  minikube addon metrics-server disabled
+   14  minikube addon disable  metrics-server 
+   15  minikube addons disable  metrics-server 
+   16  kubectl apply -f metrics-server/
+   17  kubectl get all --all-namespaces
+   18  minikube addons enable  metrics-server 
+   19  minikube addons list
+   20  kubectl get all --all-namespaces
+   21  cd ~
+   22  cd workspace/kubernetes/
+   23  ls
+   24  cd cloud-academy-recap/
+   25  ls
+   26  cd deployment/
+   27  ls
+   28  kubectl get ns
+   29  kubectl config set-context $(kubectl config current-context) --namespace=autoscale
+   30  kubectl get all
+   31  kubectl delete -f hpa.yml 
+   32  kubectl get all
+   33  cd ..
+   34  kubectl delete -f deployment/
+   35  kubectl top pods
+   36  watch kubectl top pods
+   37  tmux
+   38  clear
+   39  kubectl delete -f deployment/
+   40  watch kubectl get all
+   41  tmux
+   42  kubectl delete -f deployment/
+   43  cd deployment/
+   44  ls
+   45  vi backend.yml 
+   46  kubectl apply -f backend.yml 
+   47  vi backend.yml 
+   48  kubectl apply -f backend.yml 
+   49  kubectl get all
+   50  kubectl get pods -o wide
+   51  watch kubectl get deployments
+   52  kubectl delete pod backend-6597d78b8f-5fzf6 
+   53  watch kubectl get deployments
+   54  vi server.yml 
+   55  kubectl get po
+   56  kubectl logs backend-6597d78b8f-66qkz
+   57  vi server.yml 
+   58  kubectl explain pod.spec.containers.readinessProbe --recursive=true
+   59  vi server.yml 
+   60  tmux
+   61  minikube stop
+   62  pwd
+   63  cd workspace/kubernetes/
+   64  ls
+   65  cd cloud-academy-re
+   66  cd cloud-academy-recap/
+   67  ls
+   68  cd deployment/
+   69  ls
+   70  kubectl get ns
+   71  minikube start
+   72  kubectl get ns
+   73  kubectl get all
+   74  source <(kubectl completion bash)
+   75  kubectl get all
+   76  kubectl config set-context $(kubectl config current-config) --namespace=autoscale
+   77  kubectl config set-context $(kubectl config current-context) --namespace=autoscale
+   78  alias k='kubectl'
+   79  k get all
+   80  vi server.yml 
+   81  k apply -f server.yml 
+   82  k get pods
+   83  k get pods -o wide
+   84  k describe pod server-5db9f9b4d4-2l46s 
+   85  k get all
+   86  k logs server-5db9f9b4d4-2l46s
+   87  k vi server.yml 
+   88  k describe deployment server
+   89  kubectl get po
+   90  k delete -f server-5db9f9b4d4-2l46s 
+   91  k delete -f server.yml 
+   92  k apply -f server.yml 
+   93  vi server.yml 
+   94  k apply -f server.yml 
+   95  vi server.yml 
+   96  k apply -f server.yml 
+   97  k get all
+   98  k get pods -w
+   99  k describe pod server-7f6d57c795-jln7m  
+  100  vi server.yml 
+  101  k delete -f server.yml 
+  102  k apply -f server.yml 
+  103  k get all
+  104  k delete svc server
+  105  k get all
+  106  k describe pod server-7f6d57c795-s6flt
+  107  k explain pod.spec.containers.readinessProbe --recursive=true
+  108  k delete ns autoscale
+  109  kubectl get pv
+  110  kubectl get pv --ns default
+  111  kubectl get pv --all-namespaces
+  112  kubectl get pvc --all-namespaces
+  113  minikube start
+  114  LS
+  115  ls
+  116  cat k8-advance-topics.txt
+  117  cd workspace/kubernetes/
+  118  touch k8-sdvance-topics.tct
+  119  touch k8-sdvance-topics.txt
+  120  ls
+  121  edit k8-advance-topics.txt
+  122  ls -asl
+  123  ls
+  124  cd /
+  125  ls
+  126  cd var
+  127  ls lib
+  128  cd docker
+  129  ls -asl
+  130  cd lib
+  131  cd docker
+  132  ls
+  133  sudo ls
+  134  cd containers
+  135  sudo cd containers
+  136  ls containers/
+  137  sudo su
+  138  minikube start
+  139  exit
+  140  minikube start
+  141  clear
+  142  kubectl get ns
+  143  ls /usr/share/
+  144  ls /usr/share/bash_completion/
+  145  source /usr/share/bash_completion/bash_completion
+  146  source /usr/share/bash-completion/bash_completion
+  147  ls /usr/share/bash-completion/
+  148  ls /usr/share/bash-completion/completions
+  149  cd workspace/kubernetes/
+  150  clear
+  151  ls
+  152  cd practice-lab2/
+  153  ls
+  154  cd ..
+  155  mkdir 3rdoct
+  156  cd 3rdoct/
+  157  ech source /usr/share/bash-completion/bash_completion > bashcompletion.txt
+  158  echo source /usr/share/bash-completion/bash_completion > bashcompletion.txt
+  159  cat bashcompletion.txt 
+  160  source /usr/share/bash-completion/bash_completion
+  161  clear
+  162  ls
+  163  alias k='kubectl'
+  164  k get all
+  165  k get ns
+  166  k top pods
+  167  k top nodes
+  168  clear
+  169  k get po --all-ns
+  170  k get po --all-namespaces
+  171  k get po -o jsonpath
+  172  k get pos -o jsonpath
+  173  k get pods -o jsonpath
+  174  k get pods 
+  175  k get pods -n kube-system
+  176  k get pods -n kube-system -o json
+  177  k get pods -n kubesystem
+  178  k get ns
+  179  k get po kube-system
+  180  k get pods kube-system
+  181  k get pods
+  182  k get pods-n kube-system
+  183  k get pods -n kube-system
+  184  k get pod storage-provisioner -n kube-system
+  185  k get pod storage-provisioner -n kube-system -o json
+  186  k get pod storage-provisioner -n kube-system -o=jsonpath
+  187  k get pod storage-provisioner -n kube-system -o=jsonpath="{.items[*]['metadata.name','metadat.namespace']}"
+  188  k get pods -n kube-system -o=jsonpath="{.items[*]['metadata.name','metadat.namespace']}"
+  189  clear
+  190  k run nginx --image=ngnx 
+  191  k get pod nginx
+  192  k edit pod nginx
+  193  k get po nginx
+  194  k logs nginx
+  195  k run nginx1 --image=nginx --labels=app=nginx --dry-run -o yaml
+  196  k run nginx1 --image=nginx --labels=app=nginx --restart=Never --dry-run -o yaml
+  197  k run nginx1 --image=nginx --labels=app=nginx --restart=Never --dry-run -o yaml > nginx2.yml
+  198  vi nginx2.yml 
+  199  k apply -f nginx2.yml 
+  200  clear
+  201  k get po nginx
+  202  k get po nginx -o yaml
+  203  k get po nginx 
+  204  k edit po nginx2 -o yaml
+  205  k edit pods
+  206  k get pods
+  207  k get po nginx1
+  208  k get po nginx1 -o yaml
+  209  k edit  po nginx1 -o yaml
+  210  clear
+  211  k get po nginx2 -o yaml
+  212  k get po nginx -o yaml
+  213  clear
+  214  k get po nginx -o yaml
+  215  clear
+  216  k get po nginx -o yaml --export
+  217  clear
+  218  k describe po nginx
+  219  k delete po nginx
+  220  k delete po nginx2
+  221  k delete po nginx1
+  222  k get all
+  223  k get po
+  224  k apply -f nginx2.yml 
+  225  k delete pod nginx1 --grace-period=0 --force
+  226  minikube stop
+  227  minikube start
+  228  clear
+  229  cd workspace/kubernetes/
+  230  ls
+  231  cd 3rdoct/
+  232  ls
+  233  alias k='kubectl'
+  234  k get ns
+  235  k get po -n default
+  236  k create nginx --image=nginx:1.17.4 --labels:app=nginx --port=80 --restart=Never --dry-run -o yaml
+  237  k run nginx --image=nginx:1.17.4 --labels:app=nginx --port=80 --restart=Never --dry-run -o yaml
+  238  k run nginx --image=nginx:1.17.4 --labels=app=nginx --port=80 --restart=Never --dry-run -o yaml
+  239  k run nginx --image=nginx:1.17.4 --labels=app=nginx --port=80
+  240  k get po
+  241  k get po -w
+  242  k edit po nginx
+  243  k set image pod nginx --image=alipne:1.15
+  244  k edit po nginx
+  245  k set image pod/nginx nginx=nginx:1.15-alpine
+  246  k get po
+  247  k describe po nginx
+  248  clear
+  249  k rollout status 
+  250  k rollout status pod nginx
+  251  clear
+  252  k get po
+  253  k set image pod/nginx nginx=nginx:1.17.1
+  254  k describe po
+  255  k describe po -w
+  256  watch k describe po 
+  257  watch k describe po nginx
+  258  watch kubectl describe po nginx
+  259  k get po -w
+  260  clear
+  261  k get po nginx -o json
+  262  k get po nginx -o jsonpath="{.spec.containers[].image}
+  263  {"\n"}
+  264  '
+  265  "
+  266  k get po nginx -o jsonpath='{.spec.containers[].image}'
+  267  k get po nginx -o jsonpath
+  268  k get po nginx -o json
+  269  k get po nginx -o jsonpath='{.spec.containers[].image}'
+  270  k get po -o jsonpath='{.spec.containers[].iimage}'
+  271  k get po -o jsonpath='{.spec.containers[].image}'
+  272  k get po nginx -o jsonpath='{.spec.containers[].image}'
+  273  clear
+  274  k get po
+  275  k delete po nginx
+  276  k run nginx --image=nginx:1.17.1 --labels=app=shell-commands --restart=Never
+  277  k get po
+  278  k get po -o wide
+  279  k get po nginx -i
+  280  k get po nginx -i labels
+  281  k get po nginx -i label
+  282  k get po nginx -i labels='shell-commands'
+  283  k get po nginx --i labels='shell-commands'
+  284  k describe po nginx
+  285  clear
+  286  k exec -it nginx /ssh
+  287  k exec -it nginx /sh
+  288  k exec -it nginx bin/sh
+  289  clear
+  290  k get po
+  291  k get po -o wide
+  292  k get logs nginx
+  293  k logs nginx
+  294  clear
+  295  k run busybox --image=busybox --restart=Never --ls
+  296  k run busybox --image=busybox --restart=Never -- ls
+  297  k get po
+  298  k get po busybox -o wide
+  299  k logs po busybox
+  300  k logs  busybox
+  301  k logs  busybox -w
+  302  watch kubectl  logs  busybox 
+  303  ls /usr/share/
+  304  ls /usr/share/bash-completion/
+  305  source /usr/share/bash-completion/bash_completion
+  306  clear
+  307  k logs busybox -p
+  308  k get po
+  309  k logs busybox -p
+  310  k logs nginx -p
+  311  k edit po busybox
+  312  k edit pod busybox
+  313  k log busybox -p
+  314  k logs busybox -p
+  315  k logs busbox
+  316  k logs busybox
+  317  k logs busybox -p
+  318  k get po
+  319  k delete po nginx 
+  320  k get po
+  321  k delete po busybox
+  322  clear
+  323  k run busybox --image=busbox --labels=app=busybox --restart=Never -- bin/sh -c "sleep 3600"
+  324  k get po
+  325  k delete po busybox
+  326  k run busybox --image=busybox --labels=app=busybox --restart=Never -- bin/sh -c "sleep 3600"
+  327  k get po
+  328  k get po -w
+  329  k run nginx po --image=nginx --labels=app=nginx -- ls
+  330  k get po
+  331  k exec -it busybox sh
+  332  k run nginx1 po --image=nginx --port=80 --labels=app=nginx -- ls
+  333  k exec -it busbox sh
+  334  k exec -it busybox sh
+  335  k get po
+  336  k delete nginx
+  337  k describe po nginx1
+  338  k edit po nginx1
+  339  k get po
+  340  k delete po nginx
+  341  k get all
+  342  k describe po nginx1
+  343  k edit po nginx1
+  344  k get po
+  345  k delete po nginx1
+  346  k run nginx --image=nginx:latest --restart=Never --port=80 -- ls
+  347  k get po
+  348  k exec pod busybox sh
+  349  k exec -it busybox sh
+  350  k get po -o wide
+  351  k exec -it busybox -- wget -o- 17..17.0.8:80
+  352  k exec -it busybox -- wget -O- 17..17.0.8:80
+  353  k exec -it busybox -- Wget -- 17..17.0.8:80
+  354  k exec -it busybox -- wget -- 17.17.0.8:80
+  355  k exec -it busybox -- wget -O- 17.17.0.8:80
+  356  minikube stop
+  357  minikube start
+  358  cd workspace/kubernetes/
+  359  cd 3rdoct/
+  360  ls
+  361  clear
+  362  k get po
+  363  alias k='kubectl'
+  364  k get po
+  365  k logs busybox -p
+  366  k logs busybox --p
+  367  k logs busybox -previos
+  368  k get events
+  369  k get po
+  370  k describe po busybox
+  371  clear
+  372  k get po
+  373  k edit po buxybox
+  374  k edit po busybox
+  375  k get po
+  376  k get po 0o wide
+  377  k get po -o wide
+  378  k logs nginx
+  379  k logs busybox
+  380  k describe busybox -o yaml
+  381  k get busybox -o yaml
+  382  k get po  busybox -o yaml
+  383  k describe pod busybox
+  384  k edit po busybox
+  385  k delete po busybox
+  386  k apply -f /tmp/kubectl-edit-wgh5i.yaml 
+  387  k get po
+  388  k describe po nginx -w
+  389  watch k describe po nginx 
+  390  watch kubectl describe po nginx 
+  391  k get po
+  392  k exec -it busybox -- ls
+  393  k exec -it busybox -- wget -o- localhost:80
+  394  k exec -it busybox -- Wget -o- localhost:80
+  395  k exec -it nginx -- ls
+  396  k edit pod nginx
+  397  k delete po nginx
+  398  k apply -f /tmp/kubectl-edit-8xyse.yaml 
+  399  k get po
+  400  k exec -it nginx -- ls
+  401  k edit po nginx
+  402  k delete po nginx
+  403  k apply -f /tmp/kubectl-edit-3fbmd.yaml 
+  404  k get p[o
+  405  k get po
+  406  k describe po nginx
+  407  k edit busybox
+  408  k edit po busybox
+  409  k get po -o wide
+  410  k delete po nginx
+  411  k run nginx --image=nginx --labels=app=nginx --port=80 --restart=Never
+  412  k get po -o wide
+  413  k exec -it busybox -- Wget -o- 172.17.0.9:80
+  414  k exec -it busybox -- wget -o- 172.17.0.9:80
+  415  k exec -it busybox -- wget -o- 172.17.0.8:80
+  416  k exec -it busybox -- wget -o- 172.17.0.9
+  417  k exec -it busybox -- wget -o- 172.17.0.9:80
+  418  k exec -it busybox -- wget  172.17.0.9:80
+  419  k exec -it busybox -- sh
+  420  k run hello --image=busybox --rm -- echo 'how r u'
+  421  k run hello --image=busybox -rm -- echo 'how r u'
+  422  k run hello --image=busybox  -- echo 'how r u'
+  423  k get po
+  424  k logs hello
+  425  k run -h
+  426  k run hello1 --image=busybox --rm  -- echo 'how r u'
+  427  k run hello1 --image=busybox --rm=true  -- echo 'how r u'
+  428  k run hello1 -i -t --image=busybox --rm=true  -- echo 'how r u'
+  429  k run hello1 -i --image=busybox --rm=true  -- echo 'how r u'
+  430  k delete pod hello1
+  431  k run hello1 -i --image=busybox --rm=true  -- echo 'how r u'
+  432  k get po
+  433  k delete po busybox hello
+  434  k get po
+  435  k delete po hello1 nginx
+  436  k get po
+  437  k run hello --image=busybox --it --rm -- echo 'how r u'
+  438  k run hello --image=busybox -it --rm -- echo 'how r u'
+  439  k run hello --image=busybox -it --rm -- echo "how r u"
+  440  k delete po hello
+  441  k run hello --image=busybox -it --rm -- echo "how r u"
+  442  k get po
+  443  k delete po hello
+  444  k run hello --image=busybox --restart=Never -it --rm -- echo "how r u"
+  445  clear
+  446  k run hello --image=busybox --restart=Never -it --rm -- echo "how r u"
+  447  k get po
+  448  clear
+  449  kubectl run nginx --image=nginx --restart=Never --port=80
+  450  k get po nginx --v=7
+  451  k get po nginx --v=8
+  452  k get po nginx --v=50
+  453  k get po nginx 
+  454  k get po nginx --v
+  455  k get po nginx --v=1
+  456  k get po nginx --v=2
+  457  k get po nginx --v=3
+  458  k get po nginx --v=4
+  459  k get po nginx --v=5
+  460  k get po nginx --v=7
+  461  k get po nginx --v=1000
+  462  k get po nginx --v=1000000
+  463  clear
+  464  k get po 
+  465  k get po -o wide
+  466  k get po -o wide | grep name
+  467  k get po -o=CUSTOM-COLUMS="POD_NAME:.metadata.name"
+  468  kubectl get po -o=custom-columns="POD_NAME:.metadata.name, POD_STATUS:.status.containerStatuses[].state"
+  469  k get po --sort-by=.metadata.name
+  470  k get po --sort-by 
+  471  k get po --sort-by=.metadata.name
+  472  k get po --sort-by=.metadata.ready
+  473  k get po --sort-by=.metadata.age
+  474  k get pods
+  475  k get pods -v=4
+  476  k get pods -v=10
+  477  k get po --sort-by=.metadat.name
+  478  k get po --sort-by=.metadat.creationTimeStamp
+  479  minikube stop
+  480  vi sidecar.yml 
+  481  k apply -f sidecar.yml --dry-run
+  482  kubectl apply -f sidecar.yml --dry-run
+  483  vi sidecar.yml 
+  484  vi sidecar.yml 
+  485  kubectl apply -f sidecar.yml --dry-run
+  486  vi side
+  487  vi sidecar.yml 
+  488  kubectl apply -f sidecar.yml --dry-run
+  489  exit
+  490  k explain pod.spec.volumes --recursive=true
+  491  kubectl explain pod.spec.volumes --recursive=true
+  492  kubectl explain pod.spec.volumes --recursive=true  | more
+  493  kubectl explain pod.spec.volumes --recursive=true  | more
+  494  clear
+  495  kubectl explain pod.spec.containers --recursive=true | more
+  496  clear
+  497  kubectl explain pod.spec --recursive=true | more
+  498  clear
+  499  kubectl explain pod.spec.volumes | more
+  500  exit
+  501  minikube start
+  502  clear
+  503  cd workspace/kubernetes/
+  504  ls
+  505  cd 3rdoct/
+  506  clear
+  507  ls
+  508  alias k='kubectl'
+  509  ls /usr/share/completion-bash/
+  510  ls /usr/share/
+  511  ls /usr/share/completion-bash/
+  512  ls /usr/share/
+  513  history
+  514  ls /usr/share/completion-bash/
+  515  ls /usr/share/bash-completion/
+  516  ls /usr/share/bash-completion/bash_completion
+  517  source /usr/share/bash-completion/bash_completion
+  518  k get po
+  519  k delete po nginx
+  520  clear
+  521  k run multi-pod --image=busybox --dry-run -o yaml -- /bin/sh -c "ls", "sleep 3600"
+  522  k run multi-pod --image=busybox --labels=app=multi-pods --dry-run -o yaml -- /bin/sh -c "ls", "sleep 3600" > multipods.yml
+  523  ls
+  524  vi multipods.yml 
+  525  k apply -f multipods.yml 
+  526  k get all
+  527  k get po
+  528  k dexcribe po -w
+  529  k describe po -w
+  530  kubectl describe po -w
+  531  kubectl describe po multipod -w
+  532  k describe po multipod -w
+  533  k describe po multipod 
+  534  k get po
+  535  k describe multi-pod
+  536  k describe pod multi-pod
+  537  vi multipods.yml 
+  538  k delete -f multipods.yml 
+  539  k apply -f multipods.yml 
+  540  k get po -w
+  541  k get pods
+  542  k describe pod multi-pod
+  543  vi multipods.yml 
+  544  k apply -f multipods.yml 
+  545  k apply -f multipods.yml --dry-run
+  546  k delete -f multipods.yml 
+  547  k apply -f multipods.yml
+  548  k get pods -w
+  549  k get pods
+  550  k describe pod multi-pod
+  551  k exec -it multi-pod /sh
+  552  k exec -it multi-pod -- bin/sh
+  553  k get po multipod
+  554  k get po multi-pod
+  555  k get po multi-pod -o yaml
+  556  k get po multi-pod 
+  557  k logs multi-pods 
+  558  k get po
+  559  k logs multi-pod
+  560  k logs multi-pod multi-pod1
+  561  k logs multi-pod multi-pod2
+  562  k logs multi-pod multi-pod3
+  563  k logs multi-pod multi-pod2 --previous
+  564  k exec multi-pod multi-pod3
+  565  k exec multi-pod multi-pod3 -- ls
+  566  k exec -it  multi-pod multi-pod3 -- ls
+  567  k exec -it  multi-pod multi-pod3 --  ls
+  568  k top pod busybox --containers
+  569  k top pod multi-pod
+  570  k top pod multi-pod --containers
+  571  k get po
+  572  k top pod multi-pod
+  573  k top pod multi-pod --conatiners
+  574  k top pod multi-pod --containers
+  575  clear
+  576  k delete -f multipods.yml 
+  577  vi multipods.yml 
+  578  k apply -f multipods.yml 
+  579  watch k describe po multi-pod 
+  580  watch kubectl  describe po multi-pod 
+  581  k get po
+  582  k logs multi-pod
+  583  k logs multi-pod multi-pod1
+  584  k logs multi-pod multi-pod2
+  585  k logs multi-pod multi-pod3
+  586  k logs multi-pod multi-pod2 --previous
+  587  k get po
+  588  k logs multi-pod -c multi-pod2 --previous
+  589  k exec -it multi-pod -c multi-pod3 -- ls
+  590  k exec -it multi-pod -c multi-pod2 -- ls
+  591  k exec -it multi-pod -c multi-pod3 -- ls
+  592  k exec  multi-pod -c multi-pod3 -- ls
+  593  k top pods
+  594  k top pods multi-pods
+  595  k top pods multi-pod
+  596  k top pods multi-pod --c
+  597  k top pods multi-pod --containers
+  598  clear
+  599  k logs multi-pod
+  600  k logs multi-pod -c multi-pod1
+  601  k logs multi-pod -c multi-pod2
+  602  k logs multi-pod -c multi-pod2 --p
+  603  k logs multi-pod -c multi-pod2 --previous
+  604  k top po multi-pod
+  605  k top po multi-pod -c 
+  606  k top po multi-pod --containers
+  607  k top po multi-pod --containers > |sudo file.log
+  608  k top po multi-pod --containers > sudo file.log
+  609  k top po multi-pod --containers >  file.log
+  610  cat file.log 
+  611  clear
+  612  k delete -f multipods.yml 
+  613  k run sidecar --image=busybox --dry-run -o yaml > sidecar.yml
+  614  vi sidecar.yml 
+  615  k explain pod.spec.containers --recursive=true
+  616  k explain pod.spec.volumes --recursive=true
+  617  vi sidecar.yml 
+  618  tmux
+  619  clear
+  620  vi sidecar.yml 
+  621  k apply -f sidecar.yml 
+  622  vi sidecar.yml 
+  623  k apply -f sidecar.yml 
+  624  k get pods
+  625  k get pods -w
+  626  k describe pod sidecar
+  627  vi sidecar.yml 
+  628  k get pods
+  629  k logs sidecar
+  630  k logs sidecar busyox
+  631  k logs sidecar sidecar
+  632  vi sidecar.yml 
+  633  clear
+  634  k get po
+  635  k describe pod sidecar
+  636  k delete -f sidecar.yml 
+  637  vi sidecar.yml 
+  638  k apply -f sidecar.yml 
+  639  k get po -w
+  640  k logs sidecar
+  641  k logs sidecar busybox
+  642  k logs sidecar sidecar
+  643  k exec -it sidecar -c busbox -- ls
+  644  k exec -it sidecar  -- ls
+  645  k exec -it sidecar  -- cat /var/log/index.html
+  646  k exec -it sidecar -- sh
+  647  clear
+  648  k get po
+  649  k exec -it sidecar -c busybox -- sh
+  650  clear
+  651  k exec -it sidecar -c nginx -- sh
+  652  k get po
+  653  k get po -o yaml
+  654  k get po -o json
+  655  k get po -o jsonpath="{.spec.containers[].name}"
+  656  k get po -o jsonpath='{.spec.containers[].name}'
+  657  k get po sidecar -o jsonpath='{.spec.containers[].name}'
+  658  clear
+  659  k exec -it sidecar -c busybox -- sh
+  660  k exec -it sidecar -c nginx -- sh
+  661  k get po
+  662  k describe pod sidecar
+  663  k exec -it sidecar -c sidecar -- sh
+  664  clear
+  665  k exec -it sidecar -c sidecar -- sh
+  666  cleaer
+  667  clear
+  668  k get po
+  669  k get po -o wide
+  670  minikube stop
+  671  exit
+  672  minikube start
+  673  clear
+  674  cd workspace/kubernetes/
+  675  ls
+  676  cd 3rdoct/
+  677  ls
+  678  alias k='kubectl'
+  679  k get po
+  680  k get po --show labels
+  681  k get po --show-labels
+  682  k delete pod sidecar
+  683  k run nginx --image=nginx --labels=env=prod --restart=Never --dry-run -o yaml
+  684  k run nginx --image=nginx --labels=env=prod --restart=Never --dry-run -o yaml> nginx.yml
+  685  vi nginx.yml 
+  686  k apply -f nginx.yml 
+  687  ls
+  688  vi nginx.yml 
+  689  k apply -f nginx.yml 
+  690  vi nginx.yml 
+  691  k apply -f nginx.yml 
+  692  vi nginx.yml 
+  693  k apply -f nginx.yml 
+  694  vi nginx.yml 
+  695  k apply -f nginx.yml 
+  696  k get po
+  697  k get po --show-labels
+  698  k get po --show-labels=dev
+  699  k get po --labels='dev'
+  700  k get po --labels=env=dev
+  701  k get po --l env=dev
+  702  k get po -l env=prod
+  703  k get po -l env=dev
+  704  k get po --show-labels
+  705  k get po --labels
+  706  k get po --labels-show
+  707  k get po --show-labels
+  708  k get po --l
+  709  k get po -l
+  710  k get po -labels
+  711  k get po -show-labels
+  712  k get po --show-labels
+  713  k get po -l env=dev
+  714  k get po -l env in (prod,env)
+  715  k get po -l 'env in (prod,env)'
+  716  k get po -l 'env in (prod,dev)'
+  717  k get po -l 'env in (dev)'
+  718  k get po -l 'env not in (dev)'
+  719  k get po -l 'env notin (dev)'
+  720  k get po --show-labels -l 'env notin (dev)'
+  721  k get po --show-labels -l 'env notin (dev, prod)'
+  722  k get po --show-labels -l 'env in (dev, prod)'
+  723  k get po --show-labels -l env=dev
+  724  k get po --show-labels -l env!=dev
+  725  k get po --show-labels -l env!=prod
+  726  k get po --show-labels -l env=prod
+  727  k get po --show-labels -l env in (dev)
+  728  k get po --show-labels -l 'env in (dev)'
+  729  k get pods -l env
+  730  k get pods --show-labels -l env
+  731  k get pods -L env
+  732  k get pods --show-labels
+  733  k run nginx6 --image=nginx --restart=Never --labels=app=dev
+  734  k get po --show-labels
+  735  k get po --show-l
+  736  k get po --show-lables 'app in (dev)'
+  737  k get po --show-lables -l 'app in (dev)'
+  738  k get po  -l 'app in (dev)'
+  739  k get po --show-labels -l 'app in (dev)'
+  740  k get pods -L app
+  741  k get pods -L app=env
+  742  k get pods -l app=env
+  743  k get pods -l app=dev
+  744  k get pods -L env
+  745  k get pods -L ENV
+  746  k get pods -L env
+  747  k get pods --show-labesl
+  748  k get pods --show-labels
+  749  k get pods --show-labels -L env
+  750  k get pods  -L env
+  751  k label pod/nginx5 env=uat --overwrite
+  752  k get po --show-labels
+  753  k get po --show-labels 'env in (uat)'
+  754  k get po --show-labels 'env in (uat,dev)'
+  755  k get po --show-labels -l 'env in (uat,dev)'
+  756  k get po --show-labels -l 'env in (uat)'
+  757  k label pod/nginx env= --overwrite
+  758  k label pod/nginx5 env= --overwrite
+  759  k get po
+  760  k get po --show-labels
+  761  k labels pod nginx4{1..3} env-
+  762  k labels pod nginx4{1..2} env-
+  763  k label pod nginx4{1..2} env-
+  764  k label pod nginx{1..5} env-
+  765  k get po --show-labels
+  766  k label pod nginx{1..5} app=nginx
+  767  k get po --show-labels
+  768  k get nodes --sjhow-labels
+  769  k get nodes --show-labels
+  770  k get nodes -o wide --show-labels
+  771  k get nodes  --show-labels
+  772  clear
+  773  k get pods
+  774  k get pods --show-labels
+  775  k label pod nginx1 env=dev --overwrite
+  776  k get po
+  777  k get pods --show-labels
+  778  k label pod nginx1 -env
+  779  k label pod nginx1 app-
+  780  k get po --show-labels
+  781  k label po nginx6 app-
+  782  k get po --show-labels
+  783  k label pod nginx6 env=prod
+  784  k label pod nginx6 app=microservice
+  785  k get po --show-labels
+  786  k get po -l env=prod
+  787  k get po -l env=prod --show-labels
+  788  k get po -l 'app notin (nginx)' --show-labels
+  789  clear
+  790  k get nodes
+  791  k get nodes -o wide
+  792  k get nodes -o wide --show-labels
+  793  k label node minikube nodename=nginxnode
+  794  k get nodes --show-labels
+  795  ls
+  796  cat nginx2.yml 
+  797  vi nginx.yml 
+  798  k apply -f nginx.yml 
+  799  k get po
+  800  k get po --show-labels
+  801  k get po
+  802  k describe po nginx7 | grep Node-Selector
+  803  cat nginx.yml 
+  804  k describe po nginx1 | grep node-selector
+  805  k describe po nginx7 | grep node-selector
+  806  k describe po nginx7 | grep node-Selector
+  807  k describe po nginx7 | grep Node-Selector
+  808  k describe po nginx1 | grep Node-Selector
+  809  clear
+  810  k annotate pod nginx{1..7} name=webapp
+  811  k get po --show-labels
+  812  k get po --show-annotations
+  813  k get po --show-annotation
+  814  k get po -o wide
+  815  k describe pod nginx | grep Node-Selector
+  816  k describe pod nginx | grep annotations
+  817  k describe pod nginx | grep -i annotations
+  818  k describe pod nginx | grep -c annotations
+  819  k describe pod nginx1 | grep -c annotations
+  820  k describe pod nginx1 | grep -r annotations
+  821  k describe pod nginx1 | grep -i annotations
+  822  k describe pod nginx | grep -i annotations
+  823  k annotation pod nginx{1..7} annotations-
+  824  k annotation pod nginx{1..7} name-
+  825  k annotate pod nginx{1..7} name-
+  826  k get pods
+  827  k describe pod nginx 
+  828  k describe pod nginx | grep -i annoations
+  829  k describe pod nginx | grep -i annoation
+  830  k describe pod nginx | grep -i Node-Selector
+  831  k annotate pod nginx{1..3} name=webapp
+  832  k describe pod nginx | grep -i Annotations
+  833  k describe pod nginx | grep -i annotations
+  834  k describe pod nginx | grep -c annotations
+  835  k describe pod nginx1 | grep -c annotations
+  836  k describe pod nginx | grep -i annotations
+  837  k delete po --all
+  838  minikube stop
+  839  minikube start
+  840  clear
+  841  kubectl cersion
+  842  kubectl version
+  843  alias k='kubectl'
+  844  clear
+  845  k get pods
+  846  cd workspace/kubernetes/3rdoct/
+  847  ls
+  848  aource <(kubectl completion bash)
+  849  source <(kubectl completion bash)
+  850  k get po
+  851  clear
+  852  k create deploy webapp --image=nginx --replicas=5 --dry-run -o yaml
+  853  k create deploy webapp --image=nginx --replica=5 --dry-run -o yaml
+  854  k create deploy webapp --image=nginx -replica=5 --dry-run -o yaml
+  855  k create deploy webapp --image=nginx -replicas=5 --dry-run -o yaml
+  856  k create deploy webapp --image=nginx --dry-run -o yaml
+  857  k create deploy webapp --image=nginx --dry-run -o yaml > webapp-deploy.yml
+  858  vi webapp-deploy.yml 
+  859  k apply -webapp-deploy.yml
+  860  ls
+  861  k apply -f webapp-deploy.yml
+  862  k get pods
+  863  k get po -w
+  864  k get deploy --show-labels
+  865  k get po --show-labels
+  866  clear
+  867  k get deploy web-app
+  868  k get deploy
+  869  k get deploy webapp -o yaml
+  870  k get po -l app=webapp
+  871  k get po -l app=webapp --show-labels
+  872  clear
+  873  k scale deploy webapp --replicas=20
+  874  k get po -w
+  875  k get deploy webapp -o wide
+  876  k get deploy webapp -o wide -w
+  877  k get po -l webapp
+  878  k get po -l app=webapp
+  879  k get po -l app=webapp --show-labels
+  880  clear
+  881  k rollout status deploy webapp
+  882  k rollout history webapp
+  883  k rollout history deploy webapp
+  884  k get rs webapp
+  885  k get rs deploy rs
+  886  k get rs
+  887  k get rs -l app=webapp
+  888  k get rs -l app=webapp -o wide
+  889  k get rs  -o wide
+  890  k get rs  -o wide --show-labels
+  891  k get rs  -s
+  892  k get rs  -l app=webapp
+  893  k get rs  
+  894  k get rs  -l app=webapp -o yaml
+  895  clear
+  896  k get deploy
+  897  k delete deploy webapp
+  898  k get pods -w
+  899  k get all
+  900  clear
+  901  k create deploy webapp --image=nginx:1.17.1 --port=80
+  902  k create deploy webapp --image=nginx:1.17.1 -port=80
+  903  k create deploy webapp --image=nginx:1.17.1 --port=80 --dry-run -o yaml
+  904  k create deploy webapp --image=nginx:1.17.1 port=80 --dry-run -o yaml
+  905  k create deploy webapp --image=nginx:1.17.1 -port=80 --dry-run -o yaml
+  906  minikube stop
+  907  exit
+  908  minikube start
+  909  clear
+  910  k get po
+  911  cd workspace/kubernetes/3rdoct/
+  912  alias k='kubectl'
+  913  clear
+  914  k get po
+  915  k create deploy webapp --image=nginx:1.17.1 --port=80
+  916  k create deploy webapp --image=nginx:1.17.1 --expose --port=80
+  917  history
+  918  hstory > command.txt
+  919  history > cmd.txt

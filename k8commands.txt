@@ -1,0 +1,1000 @@
+ 1051  cd development/
+ 1052  ls
+ 1053  cd ..
+ 1054  cd java-workspace/
+ 1055  ls
+ 1056  cd ..
+ 1057  cd development/
+ 1058  ls
+ 1059  cd ..
+ 1060  cd java-workspace/
+ 1061  ls
+ 1062  mkdir kubernetes
+ 1063  mkdir yml-src
+ 1064  nano 1.1-basic_pod.yml
+ 1065  cat 1.1-basic_pod.yml 
+ 1066  pwd
+ 1067  cd ..
+ 1068  cd workspace/
+ 1069  ls
+ 1070  cd kubernetes/
+ 1071  cd ..
+ 1072  mv  java-workspace/1.1-basic_pod.yml  workspace/kubernetes/src/1.1-basic_pod.yml
+ 1073  mv  java-workspace/1.1-basic_pod.yml  workspace/kubernetes/1.1-basic_pod.yml
+ 1074  cd workspace/kubernetes/
+ 1075  ls
+ 1076  mkdir src-yml
+ 1077  mv 1.1-basic_pod.yml src-yml/
+ 1078  cd src-yml/
+ 1079  ls
+ 1080  clear
+ 1081  kubectl create -f 1.1-basic_pod.yml 
+ 1082  minikube status
+ 1083  kubectl create  1.1-basic_pod.yml 
+ 1084  kubectl create -f  1.1-basic_pod.yml 
+ 1085  cd ..
+ 1086  kubectl get pods
+ 1087  kubectl describe pod nginx-demo | more
+ 1088  curl 172.17.0.14:80
+ 1089  curl 172.17.0.14:80/TCP
+ 1090  curl 172.17.0.14:0
+ 1091  sudo su
+ 1092  docker info
+ 1093  docker
+ 1094  docker info
+ 1095  minikube start
+ 1096  clear
+ 1097  kubectl get pods
+ 1098  minikube get services
+ 1099  minikube get service
+ 1100  minikube get all
+ 1101  kubectl get services
+ 1102  curl localhost:80
+ 1103  curl localhost:31001
+ 1104  curl 10.102.107.111
+ 1105  curl 10.102.107.111:80
+ 1106  curl 10.101.170.79:80
+ 1107  shutdown
+ 1108  pwd
+ 1109  curl 192.168.99.100:80
+ 1110  ofconfig
+ 1111  ifconfig
+ 1112  lsof -i
+ 1113  clear
+ 1114  ilconfig
+ 1115  iconfig
+ 1116  ifconfig
+ 1117  iwconfig
+ 1118  clear
+ 1119  ifonfig
+ 1120  logoff
+ 1121  exit
+ 1122  minikube
+ 1123  minikube start
+ 1124  shutdown
+ 1125  exit
+ 1126  ls
+ 1127  ls -a
+ 1128  clear
+ 1129  pwd
+ 1130  cd workspace/
+ 1131  ls -a
+ 1132  cd kubernetes/
+ 1133  ls
+ 1134  cd cust-yml/
+ 1135  ls
+ 1136  ls ../src-yml/
+ 1137  ls ./src-yml/
+ 1138  ls /src-yml/
+ 1139  ls ../src-yml/
+ 1140  ls ../kubernetes
+ 1141  ls .../kubernetes
+ 1142  kubectl get pods
+ 1143  kubectl describe newpod | more
+ 1144  kubectl describe pod newpod | more
+ 1145  clear
+ 1146  kubectl get service
+ 1147  kubectl describe service newpodservice | more
+ 1148  curl 10.108.39.13:80
+ 1149  kubectl describe node
+ 1150  curl 192.168.99.100:80
+ 1151  kubectl get pods
+ 1152  kubectl get service
+ 1153  curl 192.168.99.100:32577
+ 1154  curl 10.108.39.13:32577
+ 1155  curl 192.168.99.100:32577
+ 1156  clear
+ 1157  kubectl get service
+ 1158  kubectl describe service newpodservice
+ 1159  kubectl descrbe nodes | grep -i
+ 1160  kubectl describe nodes |grep -i
+ 1161  kubectl describe nodes | grep -i
+ 1162  kubectl describe nodes | grep -i Address
+ 1163  kubectl describe nodes | grep -i Address -i
+ 1164  kubectl describe nodes | grep -i Address -A
+ 1165  kubectl describe nodes | grep -i Address -A l
+ 1166  kubectl describe nodes | grep -i Address -A a
+ 1167  kubectl describe nodes | grep -i Address 
+ 1168  kubectl describe nodes | grep -i 
+ 1169  kubectl describe nodes 
+ 1170  kubectl describe nodes | grep -i address
+ 1171  kubectl describe nodes | grep -i address -A
+ 1172  kubectl describe nodes | grep -i address -A 1
+ 1173  kubectl describe nodes | grep -i address -A 2
+ 1174  kubectl describe nodes | grep -i address -A 6
+ 1175  kubectl describe nodes | grep -i address -A 
+ 1176  kubectl describe nodes | grep -i address --A 
+ 1177  kubectl describe nodes | grep -i address --A 1
+ 1178  kubectl describe nodes | grep -i address -A 100
+ 1179  kubectl describe nodes 
+ 1180  kubectl describe nodes | more
+ 1181  kubectl describe nodes | grep
+ 1182  kubectl describe nodes | grep -i
+ 1183  kubectl describe nodes | grep -i cpu
+ 1184  kubectl describe nodes | grep -i Addresses
+ 1185  kubectl describe nodes | grep -i Addresses 1
+ 1186  kubectl describe nodes | grep -i Addres
+ 1187  kubectl describe nodes | grep -i Addresses -A
+ 1188  kubectl describe nodes | grep -i Addresses -A 1
+ 1189  kubectl describe nodes | grep -i Addresses -A 
+ 1190  kubectl describe nodes | grep -i Addresses -A 3
+ 1191  kubectl describe nodes | grep -i internal
+ 1192  kubectl describe nodes | grep -i ip
+ 1193  kubectl describe nodes | grep  ip
+ 1194  kubectl describe nodes | grep -g  ip
+ 1195  kubectl describe nodes | grep -i  ip
+ 1196  clear
+ 1197  kubectl create -f 1.1-basic-namespace.yml 
+ 1198  kubectl get namespaces
+ 1199  kubectl describe namespace qa
+ 1200  kubectl describe namespace mynamespace
+ 1201  clear
+ 1202  kubectl get namespace
+ 1203  kubectl describe namespace default
+ 1204  kubectl describe namespace development
+ 1205  kubectl describe namespace kube-public
+ 1206  kubectl describe namespace kubernetes-dashboard
+ 1207  clear
+ 1208  kubectl logs
+ 1209  kubectl logs mypod
+ 1210  kubectl get pods
+ 1211  kubectl logs newpod
+ 1212  clear
+ 1213  kubectl create -f 2.1-basic-pod.yml -n mynamespace
+ 1214  kubectl get pod
+ 1215  kubectl get pod -n mynamespace
+ 1216  kubectl logs -n namespace pod redispod
+ 1217  kubectl logs -n mynamespace pod redispod
+ 1218  kubectl logs -n mynamespace  redispod
+ 1219  clear
+ 1220  kubernetes delete pod  dbredis
+ 1221  kubernetes delete pod  
+ 1222  kubectl delete pod dbredis
+ 1223  kubectl delete pod dbredis -n mynamespace
+ 1224  kubectl delete pod redispod -n mynamespace
+ 1225  kubectl get all pods
+ 1226  kubectl get all pods -n mynamespace
+ 1227  kubectl get pods
+ 1228  kubectl get pods -n mynamespace
+ 1229  clear
+ 1230  kubectl get namespace
+ 1231  kubectl get pods -n development
+ 1232  kubectl get all -n development
+ 1233  kubectl get all -n qa
+ 1234  kubectl get all 
+ 1235  kubectl get all -o wide
+ 1236  kubectl get all -o wide | more
+ 1237  kubectl get all -n qa
+ 1238  kubectl get all -n mynamespace
+ 1239  kubectl get all 
+ 1240  kubectl get all  -o wide
+ 1241  clear
+ 1242  kubectl create namespace k8training
+ 1243  kubectl get namespaces
+ 1244  kubectl delete namespace qa
+ 1245  kubectl delete namespace mynamespace
+ 1246  kubectl create -f 1.1-basic-namespace.yml 
+ 1247  kubectl get namespace
+ 1248  clear
+ 1249  kubectl create -f 2.1-basic-pods.yml -n k8training
+ 1250  kubectl get pods
+ 1251  kubectl get pods -n k8training
+ 1252  kubectl describe pod counter-app
+ 1253  kubectl describe pod counter-app -n k8training | more
+ 1254  kubectl get pods -n k8training
+ 1255  clear
+ 1256  kubectl logs -n k8trainging
+ 1257  kubectl logs -n k8trainging counter
+ 1258  kubectl logs -n k8training counter
+ 1259  kubectl logs -n k8training counter redis
+ 1260  kubectl logs -n k8training counter-app redis
+ 1261  kubectl logs -n k8training counter-app 
+ 1262  kubectl logs -n k8training counter-app server
+ 1263  kubectl get namespaces
+ 1264  kubectl delete counter-app -n k8training
+ 1265  kubectl delete pod  counter-app -n k8training
+ 1266  clear
+ 1267  kubectl create -f 2.1-basic-pods.yml -n k8training
+ 1268  kubectl get all -n k8training
+ 1269  clear
+ 1270  kubectl get all -n k8training
+ 1271  clear
+ 1272  kubectl logs -n k8training
+ 1273  kubectl logs -n k8training counter-app
+ 1274  kubectl logs -n k8training counter-app server
+ 1275  kubectl logs -n k8training counter-app counter
+ 1276  kubectl logs -n k8training counter-app counter --tail 10
+ 1277  kubectl logs -n k8training counter-app counter -f
+ 1278  kubectl logs -n k8training counter-app poller --tail 10
+ 1279  kubectl logs -n k8training counter-app poller -f
+ 1280  minikube status
+ 1281  minikube stop
+ 1282  shutdown
+ 1283  exit
+ 1284  k get pods
+ 1285  alias k='kubectl -n k8training'
+ 1286  k get pods
+ 1287  k describe pod counter-app | more
+ 1288  k get pods -o wide
+ 1289  k logs counter-app
+ 1290  k logs counter-app redis
+ 1291  k logs counter-app server
+ 1292  k logs counter-app counter
+ 1293  k logs counter-app counter | tail --3
+ 1294  k logs counter-app counter | tail 
+ 1295  k logs counter-app counter | tail 4
+ 1296  k logs counter-app counter | tail -8
+ 1297  k logs counter-app counter | head -3
+ 1298  k logs counter-app counter | head -3 | tail -3
+ 1299  k logs counter-app counter | head -10
+ 1300  k logs counter-app counter -f
+ 1301  k logs counter-app poller
+ 1302  clear
+ 1303  minikube status
+ 1304  clear
+ 1305  pwd
+ 1306  ls workspace/kubernetes/
+ 1307  cd workspace/kubernetes/cust-yml/
+ 1308  ls
+ 1309  kubectl create -f 2.2-data-tier.yml
+ 1310  kubectl get pods
+ 1311  kubectl delete data-tier
+ 1312  kubectl delete pod  data-tier
+ 1313  clear
+ 1314  kubectl get namespace
+ 1315  k get pods
+ 1316  clear
+ 1317  kubectl create -f 2.2-data-tier.yml -n k8-training
+ 1318  kubectl get namespace
+ 1319  kubectl create -f 2.2-data-tier.yml -n k8s-training
+ 1320  kubectl -n k8s-training get all
+ 1321  kubectl create -f 2.2-data-tier.yml -n k8s-training
+ 1322  clear
+ 1323  kubectl create -f temp.yml.yml 
+ 1324  kubectl create -f 2.2-data-tier.yml -n k8s-training
+ 1325  clear
+ 1326  kubectl create -f temp.yml.yml 
+ 1327  kubectl create -f 2.2-data-tier.yml 
+ 1328  kubectl create -f temp.yml.yml 
+ 1329  kubectl delete service data-tier-service
+ 1330  kubectl delete pod data-tier-pod
+ 1331  clear
+ 1332  kubectl -n k8s-training get all
+ 1333  kubectl -n k8s-training delete data-tier-pod
+ 1334  kubectl -n k8s-training delete pod data-tier-pod
+ 1335  clear
+ 1336  kubectl create -f 2.2-data-tier.yml -n k8s-training
+ 1337  alias k='kubectl -n k8s-training'
+ 1338  k get all
+ 1339  k describe a;;
+ 1340  k describe all
+ 1341  k describe all | more
+ 1342  clear
+ 1343  k delete all
+ 1344  k delete all pods
+ 1345  k delete pod data-tier-pod
+ 1346  k delete service data-tier-service
+ 1347  clear
+ 1348  k create -f 2.2-data-tier.yml 
+ 1349  k delete pod data-tier-pod
+ 1350  k delete service data-tier-service
+ 1351  clear
+ 1352  k create -f 2.2-data-tier.yml 
+ 1353  k describe all
+ 1354  clear
+ 1355  k describe all | more
+ 1356  curl 172.17.0.016:6379
+ 1357  clear
+ 1358  k get all
+ 1359  k create -f 2.2-app-tier.yml 
+ 1360  k get all
+ 1361  k logs pod app-tier
+ 1362  k log\ pod app-tier
+ 1363  k log pod app-tier
+ 1364  clear
+ 1365  k get all
+ 1366  kubectl logs pod app-tier
+ 1367  kubectl logs pod app-tier -n k8s-training
+ 1368  kubectl logs pod data-tier-pod -n k8s-training
+ 1369  kubectl logs  data-tier-pod -n k8s-training
+ 1370  clear
+ 1371  k get all
+ 1372  k logs app-tier
+ 1373  clear
+ 1374  kubectl get all
+ 1375  kubectl describe pod newpod
+ 1376  clear
+ 1377  kubectl get namespace
+ 1378  kubectl get all -n k8training
+ 1379  kubectl describe counter-app
+ 1380  kubectl describe pod  counter-app
+ 1381  kubectl describe pod  counter-app -n k8training
+ 1382  clear
+ 1383  kubectl get all -n k8training
+ 1384  kubectl delete pod counter-app
+ 1385  kubectl delete pod counter-app -n k8training
+ 1386  k get all 
+ 1387  k logs app-tier
+ 1388  k get all 
+ 1389  clear
+ 1390  k get all
+ 1391  k delete pod app-tier
+ 1392  k create -f 2.2-app-tier.yml 
+ 1393  k get all
+ 1394  k logs app-tier | more
+ 1395  k describe service app-tier
+ 1396  k delete all
+ 1397  k delete all pods
+ 1398  k delete all pod data-tier-pod
+ 1399  k delete  pod data-tier-pod
+ 1400  k get all
+ 1401  k delete  pod app-tier
+ 1402  clear
+ 1403  k delete service data-tier-service
+ 1404  k delete service app-tier
+ 1405  clear
+ 1406  k get all
+ 1407  k create -f 2.2-data-tier.yml 
+ 1408  k create -f 2.2-app-tier.yml 
+ 1409  k get all
+ 1410  k create -f 2.2-app-tier.yml 
+ 1411  k delete pod/app-tier
+ 1412  k delete service/app-tier
+ 1413  k create -f 2.2-app-tier.yml 
+ 1414  k get all
+ 1415  clear
+ 1416  k log app-tier
+ 1417  k logs app-tier
+ 1418  k logs data-tier
+ 1419  clear
+ 1420  k describe all
+ 1421  clear
+ 1422  k describe all | more
+ 1423  curl 172.17.0.16:8080
+ 1424  clear 
+ 1425  k logs
+ 1426  k logs app
+ 1427  k logs app-tier
+ 1428  k logs data-tier
+ 1429  clear
+ 1430  kubectl get dns srv
+ 1431  kubectl  dns srv
+ 1432  minikube  dns srv
+ 1433  minikube  dns 
+ 1434  clear
+ 1435  k create -f 2.2-support-tier.yml 
+ 1436  k get all
+ 1437  k logs
+ 1438  k logs app-tier
+ 1439  k logs support-tier
+ 1440  k logs support-tier counter
+ 1441  k logs support-tier counter -f
+ 1442  k logs support-tier poller -f
+ 1443  k logs support-tier counter -f
+ 1444  k get all
+ 1445  k logs support-tier
+ 1446  k logs support-tier poller
+ 1447  k logs support-tier poller head 2
+ 1448  k logs support-tier poller | head 3
+ 1449  k logs support-tier poller | tail 2
+ 1450  k logs support-tier poller | tail --2
+ 1451  k logs support-tier poller tail --2
+ 1452  k logs support-tier poller clear
+ 1453  kclear
+ 1454  clear
+ 1455  k describe all | more
+ 1456  k delete pod/support
+ 1457  k delete pod/support-tier
+ 1458  k get all
+ 1459  k create -f 2.2-support-tier.yml 
+ 1460  k get all
+ 1461  k logs support-tier poller
+ 1462  k logs support-tier counter
+ 1463  k logs support-tier poller
+ 1464  k logs app-tier
+ 1465  k logs data-tier
+ 1466  k logs support-tier poller
+ 1467  k logs support-tier counter
+ 1468  k logs support-tier poller -f
+ 1469  k logs support-tier counter
+ 1470  k logs support-tier counter -f
+ 1471  k delete pod/support-tier
+ 1472  k create -f 2.2-support-tier.yml 
+ 1473  k get all
+ 1474  clear
+ 1475  k logs support-tier
+ 1476  k logs support-tier poller
+ 1477  clear
+ 1478  kubectl get nodes
+ 1479  kubectl get nodes | grep -i
+ 1480  kubectl get nodes | grep -i -Address
+ 1481  kubectl get nodes | grep -i Address A 1
+ 1482  kubectl get nodes | grep -i Address 
+ 1483  kubectl get nodes | grep -i
+ 1484  kubectl get nodes | grep 
+ 1485  kubectl get nodes 
+ 1486  kubectl describe nodes | grep -i
+ 1487  kubectl describe nodes | grep -i Address
+ 1488  kubectl describe nodes | grep -i Address 2
+ 1489  kubectl describe nodes | grep -i Address A 2
+ 1490  kubectl describe nodes | grep -i Address 
+ 1491  kubectl describe nodes 
+ 1492  curl 192.168.99.100:8080
+ 1493  k get all
+ 1494  curl 192.168.99.100:8080
+ 1495  curl 192.168.99.100:6379
+ 1496  curl 10.101.88.78:8080
+ 1497  k logs data-tier
+ 1498  minikube stop
+ 1499  exit
+ 1500  minikube start
+ 1501  clear
+ 1502  kubectl get namespace
+ 1503  kubectl get all -n k8training
+ 1504  kubectl -n k8training get pods
+ 1505  kubectl -n k8training get service
+ 1506  alias k = 'kubectl -n k8training'
+ 1507  alias k='kubectl -n k8training'
+ 1508  clear
+ 1509  k get pods
+ 1510  k describe counter-app server | more
+ 1511  k describe counter-app
+ 1512  kubectl -n k8training describe counter-app
+ 1513  kubectl  describe counter-app
+ 1514  kubectl -n k8training  describe counter-app 
+ 1515  kubectl describe counter-app server
+ 1516  kubectl describe counter-app server -n k8training
+ 1517  clear
+ 1518  kubectl get namespace
+ 1519  kubectl get pods
+ 1520  kubectl describe newpod
+ 1521  kubectl describe pod newpod
+ 1522  clear
+ 1523  k describe pod counter-app
+ 1524  clear
+ 1525  k get pods
+ 1526  k get services
+ 1527  k get deployment
+ 1528  k get probes
+ 1529  k get namespace
+ 1530  clear
+ 1531  k describe pod counter-app | less
+ 1532  pwd
+ 1533  ls -lart
+ 1534  clear
+ 1535  ls -h
+ 1536  ls -lh
+ 1537  clear
+ 1538  minikube status
+ 1539  kubectl get nodes
+ 1540  minikube status
+ 1541  ping google.com
+ 1542  clear
+ 1543  minikube dashboard
+ 1544  shutdown
+ 1545  minikube status
+ 1546  clear
+ 1547  kubectl get all
+ 1548  clear
+ 1549  calc
+ 1550  cal
+ 1551  pwd
+ 1552  cd workspace/kubernetes/cust-yml/
+ 1553  ls
+ 1554  mkdir deployment
+ 1555  cd deployment/
+ 1556  clear
+ 1557  ls
+ 1558  touch 1.1-deployment.yml
+ 1559  ls
+ 1560  ls -h
+ 1561  ls- lhrt
+ 1562  clear
+ 1563  touch deployment-namespace.yml
+ 1564  create -f deployment-namespace.yml 
+ 1565  kubectl create -f deployment-namespace.yml 
+ 1566  kubectl get namespaces
+ 1567  clear
+ 1568  ls
+ 1569  create -f 1.1-deployment.yml 
+ 1570  kubectl create -f 1.1-deployment.yml 
+ 1571  kubectl delete service/data-tier
+ 1572  k get pods
+ 1573  alias k='kubectl -n deployment'
+ 1574  k get all
+ 1575  k create -f 1.1-deployment.yml 
+ 1576  k get namespace
+ 1577  unalias k
+ 1578  clear
+ 1579  alias k='kubectl -n deployments'
+ 1580  k get all
+ 1581  k create -f 1.1-deployment.yml 
+ 1582  k get all
+ 1583  k logs data-tier
+ 1584  k log data-tier
+ 1585  k logs data-tier
+ 1586  k logs pod data-tier
+ 1587  k logs microservice
+ 1588  k logs data-tier
+ 1589  k logs service data-tier
+ 1590  clear
+ 1591  k get all
+ 1592  k logs service
+ 1593  k logs data-tier
+ 1594  k log\ data-tier
+ 1595  k log data-tier
+ 1596  k logs data-tier
+ 1597  k logs service data-tier
+ 1598  k logs pods data-tier
+ 1599  k logs pod
+ 1600  clear
+ 1601  kubectl get logs
+ 1602  k get logs data-tier
+ 1603  k  logs data-tier
+ 1604  kubectl  logs
+ 1605  kubectl  logs data-tier
+ 1606  kubectl  get all
+ 1607  kubectl logs service/kubernetes
+ 1608  kubectl logs newpod
+ 1609  kubectl logs kubernetes
+ 1610  kubectl logs pod/customerinfo-deployment-767b7f5594-r97dc
+ 1611  clear
+ 1612  k get all
+ 1613  k logs data-tier-5bc6599b5f-gz48j
+ 1614  clear
+ 1615  k get deployment
+ 1616  k get pods
+ 1617  minkube stop
+ 1618  minikube stop
+ 1619  minikube start
+ 1620  minikube status
+ 1621  minikube dashboard
+ 1622  shutdown
+ 1623  pwd
+ 1624  cd workspace/kubernetes/cust-yml/deployment/
+ 1625  ls
+ 1626  kubectl get all
+ 1627  kubectl get namespaces
+ 1628  alias k='kubectl -n deployments'
+ 1629  k get all
+ 1630  ls
+ 1631  touch 1.1-app-tier.yml
+ 1632  k create -f 1.1-app-tier.yml 
+ 1633  k get all
+ 1634  k describe service data-tier | more
+ 1635  k describe service app-tier
+ 1636  curl 172.17.0.19:8080
+ 1637  clear
+ 1638  k get all
+ 1639  k logs pod/app-tier-769db49bb6-gdm4t
+ 1640  k logs deployment.apps/app-tier
+ 1641  k get all
+ 1642  k logs service/app-tier
+ 1643  k logs replicaset.apps/app-tier-769db49bb6 
+ 1644  clear
+ 1645  touch 1.1-support-tier.yml
+ 1646  k create -f 1.1-support-tier.yml 
+ 1647  k get all
+ 1648  k describe pod pod/support-tier-5cc97cb7f-pg8sc | more
+ 1649  k describe pod support-tier-5cc97cb7f-pg8sc | more
+ 1650  k get deployments
+ 1651  k scale deployment support-tier --replicas=5
+ 1652  k get pods
+ 1653  k get deployments
+ 1654  k logs support-tier-5cc97cb7f-4m7wb
+ 1655  k logs support-tier-5cc97cb7f-4m7wb counter
+ 1656  k logs support-tier-5cc97cb7f-4m7wb counter -f
+ 1657  k logs support-tier-5cc97cb7f-4m7wb poller
+ 1658  k logs support-tier-5cc97cb7f-4m7wb poller -f
+ 1659  clear
+ 1660  k get pods
+ 1661  k delete pod support-tier-5cc97cb7f-plvcq 
+ 1662  k get pods
+ 1663  k get deployments
+ 1664  k delete support-tier-5cc97cb7f-pg8sc --wait=false
+ 1665  k delete pod  support-tier-5cc97cb7f-pg8sc --wait=false
+ 1666  k get deployments
+ 1667  k scale deployment app-tier --replicas=5
+ 1668  k get all
+ 1669  clear
+ 1670  k get deployments
+ 1671  k describe app-tier
+ 1672  k describe service app-tier
+ 1673  minikube start
+ 1674  minikube status
+ 1675  minikube stop
+ 1676  shutdown
+ 1677  kubectl edit deployment app-tier -n deployments
+ 1678  clear
+ 1679  kubectl rollout -n deployments status deployment app-tier
+ 1680  minikube status
+ 1681  clear
+ 1682  k get all
+ 1683  kubectl get all
+ 1684  kubectl logs pod/customerinfo-deployment-767b7f5594-qwdxz
+ 1685  clear
+ 1686  kubectl get namespaces
+ 1687  k get all -n debelopment
+ 1688  kubectl get all -n debelopment
+ 1689  kubectl get all -n development
+ 1690  kubectl get all -n deployments
+ 1691  kubectl get all -n k8training
+ 1692  kubectl get all -n k8-training
+ 1693  kubectl get all -n k8s-training
+ 1694  kubectl get all -n k8training
+ 1695  kubectl get all -n k8s-training
+ 1696  clear
+ 1697  kubectl get all -n deployments
+ 1698  watch kubectl delete pod/customerinfo-deployment-767b7f5594-qwdxz pod/support-tier-5cc97cb7f-nr56x --wait=false
+ 1699  kubectl get all -n deployments 
+ 1700  kubectl delete pod/support-tier-5cc97cb7f-kl9lc pod/support-tier-5cc97cb7f-mlmzl
+ 1701  kubectl delete pod/support-tier-5cc97cb7f-kl9lc 
+ 1702  kubectl delete pod support-tier-5cc97cb7f-kl9lc 
+ 1703  k get all
+ 1704  kubectl get all -n deployments 
+ 1705  kubectl delete pod support-tier-5cc97cb7f-4m7wb 
+ 1706  kubectl get all -n deployments 
+ 1707  kubectl delete pod support-tier-5cc97cb7f-4m7wb --wait=false
+ 1708  kubectl get all -n deployments 
+ 1709  kubectl delete pod support-tier-5cc97cb7f-4m7wb --wait=false
+ 1710  kubectl delete  support-tier-5cc97cb7f-4m7wb --wait=false
+ 1711  kubectl delete  pod/support-tier-5cc97cb7f-4m7wb --wait=false
+ 1712  kubectl delete pods support-tier-5cc97cb7f-77qw7 support-tier-5cc97cb7f-4m7wb  support-tier-5cc97cb7f-kl9lc support-tier-5cc97cb7f-kl9lc support-tier-5cc97cb7f-nr56x --wait=false
+ 1713  kubectl delete pods support-tier-5cc97cb7f-77qw7 support-tier-5cc97cb7f-4m7wb  support-tier-5cc97cb7f-kl9lc support-tier-5cc97cb7f-kl9lc support-tier-5cc97cb7f-nr56x -n deploymnet --wait=false
+ 1714  kubectl delete pods support-tier-5cc97cb7f-77qw7 support-tier-5cc97cb7f-4m7wb  support-tier-5cc97cb7f-kl9lc support-tier-5cc97cb7f-kl9lc support-tier-5cc97cb7f-nr56x -n deploymnets --wait=false
+ 1715  k get all -n deployments
+ 1716  kubectl get namespaces
+ 1717  k get all -n deployments
+ 1718  kubernetes get all -n deployments
+ 1719  kubectl get all -n deployments
+ 1720  kubectl delete pods support-tier-5cc97cb7f-77qw7 support-tier-5cc97cb7f-4m7wb  support-tier-5cc97cb7f-kl9lc support-tier-5cc97cb7f-kl9lc support-tier-5cc97cb7f-nr56x -n deployments --wait=false
+ 1721  watch watch -n -1 kubectl -n deployments
+ 1722  watch watch -n 1 kubectl -n deployments
+ 1723  watch -n 1 kubectl -n deployments
+ 1724  watch -n 1 kubectl -n deployments > kubehelp.txt
+ 1725  pwd
+ 1726  ls
+ 1727  vi kubehelp.txt 
+ 1728  clear
+ 1729  cd workspace/kubernetes/cust-yml/deployment/
+ 1730  ls
+ 1731  kubectl -n deployments get all
+ 1732  kubectl describe service app-tier
+ 1733  kubectl describe  app-tier
+ 1734  kubectl describe  app-tier -n deployments
+ 1735  kubectl describe service app-tier -n deployments
+ 1736  clear
+ 1737  watch kubectl top pods -n deployments
+ 1738  ls
+ 1739  touch 1.1-app-tier-cpu-request.yml
+ 1740  alias k='kubectl -n deployments'
+ 1741  k get pods
+ 1742  clear
+ 1743  k create -f 1.1-app-tier-cpu-request.yml 
+ 1744  k apply -f 1.1-app-tier-cpu-request.yml 
+ 1745  k get all
+ 1746  watch kubectl top
+ 1747  watch k top
+ 1748  watch kubectl top pods -n deployments
+ 1749  k apply -f 1.1-app-tier-cpu-request.yml 
+ 1750  watch kubectl top -n deployments
+ 1751  watch kubectl top pods -n deployments
+ 1752  touch 1.1-support-tier-cpu-request.yml
+ 1753  kubectl apply -f 1.1-support-tier-cpu-request.yml 
+ 1754  k get all
+ 1755  watch kubectl top pods -n deployments
+ 1756  clear
+ 1757  kubectl api-resouces
+ 1758  kubectl api-resources
+ 1759  kubectl describe -n deployments deploy
+ 1760  clear
+ 1761  touch 1.1-autoscale.yml
+ 1762  ls
+ 1763  kubectl create -f 1.1-autoscale.yml -n deployments
+ 1764  watch kubectl top pods -n deployments
+ 1765  k get all
+ 1766  k get podds
+ 1767  k get pods
+ 1768  watch kubectl top pods -n deployments
+ 1769  k get deployments
+ 1770  watch kubectl top pods
+ 1771  watch kubectl top pods -n deployments
+ 1772  watch -n 1 kubectl get -n deployments deploymets app-tier
+ 1773  watch -n 1 kubectl get -n deployments  app-tier
+ 1774  kubectl get namespaces
+ 1775  watch -n 1 kubectl get deployments -n deployments  app-tier
+ 1776  watch -n 1 kubectl get pods -n deployments app-tier
+ 1777  watch -n 1 kubectl get deployments -n deployments app-tier
+ 1778  clear
+ 1779  watch -n 1 kubectl get deployments -n deployments app-tier
+ 1780  kubectl apply -f 1.1-autoscale.yml -n deployments
+ 1781  watch kubectl pods top -n deployments
+ 1782  watch -n 1 kubectl get deployments -n deployments app-tier
+ 1783  watch kubectl top pods -n deployments
+ 1784  kubectl get -n deployments hpa
+ 1785  k get hpa
+ 1786  k get pods
+ 1787  k get deployments
+ 1788  k create -f 1.1-autoscale.yml 
+ 1789  k apply -f 1.1-autoscale.yml 
+ 1790  k get deployments
+ 1791  k get hpa
+ 1792  watch -n 1 kubectl get deployments -n deployments app-tier
+ 1793  k get hpa
+ 1794  watch -n 1 kubectl get deployments -n deployments app-tier
+ 1795  k get hpa
+ 1796  watch -n 1 kubectl get deployments -n deployments app-tier
+ 1797  k get hpa
+ 1798  k edit hpa
+ 1799  clear
+ 1800  k get hpa
+ 1801  k delete hpa
+ 1802  k delete hpa app-tier
+ 1803  k get hpa
+ 1804  clear
+ 1805  k edit app-tier
+ 1806  k edit deployment app-tier
+ 1807  watch -n 1 kubectl -n deployments get deployments
+ 1808  k edit deployment app-tier
+ 1809  k rollout status deployment app-tier
+ 1810  watch k rollout status deployment app-tier
+ 1811  k edit deployment app-tier
+ 1812  watch k rollout status deployment app-tier
+ 1813  k rollout status deployment app-tier
+ 1814  clear
+ 1815  k get pods
+ 1816  k get deployments
+ 1817  k rollout status deployment app-tier
+ 1818  k edit deployment app-tier
+ 1819  k rollout status deployment app-tier
+ 1820  k edit deployment app-tier
+ 1821  k get deployments
+ 1822  k edit deployment app-tier
+ 1823  k get deployments
+ 1824  k rollout status deployment app-tier
+ 1825  watch -n 1 k get deployments app-tier
+ 1826  watch -n 1 kubectl -n deployments get deployments
+ 1827  tmux
+ 1828  k rollout deployment app-tier
+ 1829  watch -n 1 kubectl -n deployments get deployments
+ 1830  k scale app-tier --replicas=1
+ 1831  k scale deployment  app-tier --replicas=1
+ 1832  watch -n 1 kubectl -n deployments get deployments
+ 1833  clear
+ 1834  kubectl create namespace probes
+ 1835  kebectl get namespace
+ 1836  kubectl get namespace
+ 1837  kubectl delete namespace probes
+ 1838  clear
+ 1839  kubectl get namespaces
+ 1840  clear
+ 1841  tuux
+ 1842  clear
+ 1843  touch 1.1-namespace-probes.yml
+ 1844  unalias k
+ 1845  k get pods
+ 1846  kubectl create -f 1.1-namespace-probes.yml 
+ 1847  kubectl get namespace
+ 1848  kubectl create -f 1.1-namespace-probes.yml 
+ 1849  alias k='kubectl -n probes'
+ 1850  k get all
+ 1851  clear
+ 1852  pwd
+ 1853  cd ..
+ 1854  kubectl get namespaces
+ 1855  mkdir probes
+ 1856  touch 1.1-data-tier.yml
+ 1857  pwd
+ 1858  cd probes/
+ 1859  cd ..
+ 1860  mv 1.1-data-tier.yml probes probes/
+ 1861  mv 1.1-data-tier.yml probes/
+ 1862  mv 1.1-data-tier.yml /probes/
+ 1863  mv 1.1-data-tier.yml /probes
+ 1864  ls
+ 1865  cd probes/
+ 1866  clear
+ 1867  ls
+ 1868  cat 1.1-data-tier.yml 
+ 1869  minikube stop
+ 1870  shutdown
+ 1871  minikube
+ 1872  1 start
+ 1873  minikube start
+ 1874  minikube dashnboard
+ 1875  minikube dashboard
+ 1876  watch -n 1 kubectl
+ 1877  watch -n  kubectl
+ 1878  watch -n 2  kubectl
+ 1879  watch -n 10  kubectl
+ 1880  kubectl
+ 1881  clear
+ 1882  watch -n 10  kubectl get pods
+ 1883  watch -n 1  kubectl -n deployments get pods
+ 1884  kubectl get -n deployments pods -w
+ 1885  clear
+ 1886  kubectl describe -n deployments po
+ 1887  clear
+ 1888  kubectl -n deployments get ns
+ 1889  kubectl -n deployments get svc
+ 1890  kubectl -n deployments get ds
+ 1891  kubectl get ds
+ 1892  kubectl get rs
+ 1893  kubectl -n deployments get rs
+ 1894  k describe -n deployments app-tier-55b775c85d 
+ 1895  kubectl describe -n deployments app-tier-55b775c85d 
+ 1896  kubectl -n deployments explain app-tier-55b775c85d 
+ 1897  kubectl -n deployments logs app-tier-55b775c85d 
+ 1898  kubectl -n deployments logs app-tier
+ 1899  kubectl -n deployments logs pod app-tier
+ 1900  kubectl -n deployments logs pods app-tier
+ 1901  kubectl -n deployments get logs pods app-tier
+ 1902  kubectl logs app-tier
+ 1903  kubectl logs pod app-tier
+ 1904  kubectl logs pod app-tier -n deploymnets
+ 1905  kubectl logs pod app-tier -n deployments
+ 1906  kubectl logs  app-tier -n deployments
+ 1907  pwd
+ 1908  history > k8scommands.txt
+ 1909  clear
+ 1910  cat k8scommands.txt 
+ 1911  clear
+ 1912  watch kubectl top pods -n deployments
+ 1913  kubectl get all -n deployments
+ 1914  kubectl get logs service/app-tier -n deployments
+ 1915  kubectl get logs app-tier -n deployments
+ 1916  cat k8scommands.txt 
+ 1917  clear
+ 1918  kubectl get pods -n deployments
+ 1919  kubectl logs app-tier-55b775c85d-6sr5h -n deployments
+ 1920  clear
+ 1921  kubectl describe -n deployments hpa
+ 1922  cal
+ 1923  color 1
+ 1924  mcolor 22
+ 1925  cleaclearclear
+ 1926  clear
+ 1927  kubectl describe -n deployments hpa
+ 1928  clear
+ 1929  kubectl describe -n deployments hpa
+ 1930  history >> k8scommands.txt 
+ 1931  cat k8scommands.txt 
+ 1932  clear
+ 1933  cal
+ 1934  cal 2
+ 1935  cal 3
+ 1936  cal 1
+ 1937  clar
+ 1938  clear
+ 1939  cal 10
+ 1940  cal
+ 1941  cal 2020
+ 1942  clear
+ 1943  year 2020
+ 1944  cal 2021
+ 1945  clear
+ 1946  tmux
+ 1947  sudo su
+ 1948  tmux
+ 1949  apt install tmux
+ 1950  sudo apt install tmux
+ 1951  tmux
+ 1952  clear
+ 1953  history >> k8scommands.txt 
+ 1954  minikube status
+ 1955  clear
+ 1956  kubectl get namespace
+ 1957  alias k='kubectl -n probes'
+ 1958  k get all
+ 1959  kubectl get all
+ 1960  cls
+ 1961  pwd
+ 1962  clear
+ 1963  cd workspace/kubernetes/cust-yml/probes/
+ 1964  ls
+ 1965  k get all
+ 1966  k create -f 1.1-data-tier.yml 
+ 1967  k get all
+ 1968  k describe data-tier-probe-demo-dep-6979c644b4-wlhfn
+ 1969  k describe pod data-tier-probe-demo-dep-6979c644b4-wlhfnc
+ 1970  k inspect pod  data-tier-probe-demo-dep-6979c644b4-wlhfn
+ 1971  k explain pod  data-tier-probe-demo-dep-6979c644b4-wlhfn
+ 1972  k explain   data-tier-probe-demo-dep-6979c644b4-wlhfn
+ 1973  clear
+ 1974  k get deployments -w
+ 1975  k get all
+ 1976  k delete pod/data-tier-probe-demo-dep-6979c644b4-wlhfn  --wait=false
+ 1977  k get deployments -w
+ 1978  k describe app-tier
+ 1979  k describe deployment data-tier-probe-demo-dep
+ 1980  k get all
+ 1981  k logs deployment data-tier-probe-demo-dep
+ 1982  k logs  data-tier-probe-demo-dep
+ 1983  k get all
+ 1984  k logs data-tier-probe-demo-dep-6979c644b4-gzv6z
+ 1985  clear
+ 1986  k get deployments -w
+ 1987  touch 1.1-app-tier.yml
+ 1988  minikube stop
+ 1989  shutdown
+ 1990  pwd
+ 1991  minikube start
+ 1992  tty
+ 1993  pwd
+ 1994  ls
+ 1995  tty
+ 1996  cd workspace/kubernetes/
+ 1997  tty
+ 1998  tumux
+ 1999  tmux
+ 2000  pwd
+ 2001  cd workspace/kubernetes/cust-yml/volumes/
+ 2002  ls
+ 2003  cat 1.1-namespace.yml 
+ 2004  cat 1.1-data-tier.yml 
+ 2005  k get all
+ 2006  kubectl get all
+ 2007  clear
+ 2008  kubectl get namespaces
+ 2009  alias k='kubectl -n volumes'
+ 2010  k get all
+ 2011  clear
+ 2012  ls
+ 2013  cd ..
+ 2014  ls
+ 2015  cd probes/
+ 2016  ls
+ 2017  kubectl -n probes get all
+ 2018  kubectl exec -n config app-tier-probe-demo-9d74d5459-sfp7f env
+ 2019  kubectl exec -n config app-tier-probe-demo-9d74d5459-sfp7f ENV
+ 2020  kubectl exec -n probes app-tier-probe-demo-9d74d5459-sfp7f ENV
+ 2021  kubectl exec -n probes app-tier-probe-demo-9d74d5459-sfp7f env
+ 2022  kubectl exec -n probes app-tier-probe-demo-9d74d5459-sfp7f -it /bin/bash
+ 2023  kubectl exec -n probes app-tier-probe-demo-9d74d5459-sfp7f -it /bin/bash/
+ 2024  kubectl exec -n probes data-tier-probe-demo-6979c644b4-l497x  -it /bin/bash/
+ 2025  kubectl exec  data-tier-probe-demo-6979c644b4-l497x  -it /bin/bash/
+ 2026  kubectl -n probes  data-tier-probe-demo-6979c644b4-l497x exec  -it /bin/bash/ 
+ 2027  kubectl exec -it -n probes  data-tier-probe-demo-6979c644b4-l497x  /bin/bash/ 
+ 2028  kubectl exec -it -n probes  data-tier-probe-demo-6979c644b4-l497x  bin/bash/ 
+ 2029  kubectl get all -n probes
+ 2030  kubectl exec -it -n probes  data-tier-probe-demo-6979c644b4-l497x  /bash/ 
+ 2031  kubectl exec -it -n probes  data-tier-probe-demo-6979c644b4-l497x  bin/bash/ 
+ 2032* 
+ 2033  kubectl exec -it -n probes  data-tier-probe-demo-6979c644b4-l497x  bin/bash/ 
+ 2034  watch kubectl exec -it -n probes  data-tier-probe-demo-6979c644b4-l497x  bin/bash/ 
+ 2035  kubectl exec -it -n probes  data-tier-probe-demo-6979c644b4-l497x  bin/bash/ 
+ 2036  kubectl exec  data-tier-probe-demo-6979c644b4-l497x -it  bin/bash/ 
+ 2037  kubectl exec  data-tier-probe-demo-6979c644b4-l497x -n probes -it  bin/bash/ 
+ 2038  kubectl exec  data-tier-probe-demo-6979c644b4-l497x -n probes -it  /bin/bash/ 
+ 2039  kubectl exec  data-tier-probe-demo-6979c644b4-l497x -n probes   /bin/bash/ 
+ 2040  kubectl exec  data-tier-probe-demo-6979c644b4-l497x -n probes   /bin/bash 
+ 2041  kubectl kubectl exec  data-tier-probe-demo-6979c644b4-l497x -n probes   /bin/bash 
+ 2042  kubectl exec  data-tier-probe-demo-6979c644b4-l497x -n probes   /bin/bash 
+ 2043  kubectl exec  data-tier-probe-demo-6979c644b4-l497x -n probes --  /bin/bash 
+ 2044  kubectl exec  data-tier-probe-demo-6979c644b4-l497x -n probes --it  /bin/bash 
+ 2045  kubectl exec  data-tier-probe-demo-6979c644b4-l497x -n probes -it  /bin/bash 
+ 2046  kubectl exec -n probes  data-tier-probe-demo-6979c644b4-l497x  -it  /bin/bash 
+ 2047  cd /kubernetes/
+ 2048  cd ..
+ 2049  ls
+ 2050  history > k8commands.txt

@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    app: config-pod-demo
+  name: config-pod
+spec:
+  volumes:
+  - name: configdata
+    configMap:
+     name: confg
+     items:
+     - key: "game.properties"
+       path: "game.properties"
+     - key: "user-interface.properties"
+       path: "user-interface.properties"
+  containers:
+  - image: alpine
+    name: config-pod
+    command: [bin/sh, -c, "sleep 3600"]
+    volumeMounts:
+    - name: configdata
+      mountPath: "/config" 
+      readOnly: true
+    env:
+    - name: PLAYER_INITIAL_LIVES
+      valueFrom:
+       configMapKeyRef:
+        name: config
+        key: player_initial_lives
+    - name: UI_PROPERTIES
+      valueFrom:
+       configMapKeyRef:
+        name: config
+        key: ui_properties_file_name 
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}

@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: client-layer
+ labels:
+  app: multi-pods
+  layer: frontend
+spec:
+ containers:
+ - name: counter
+   image: lrakai/microservices:counter-v1
+   env:
+   - name: API_URL
+     value: http://$(SERVICE_LAYER_SERVICE_HOST):$(SERVICE_LAYER_SERVICE_PORT)
+ - name: poller
+   image: lrakai/microservices:poller-v1
+   env:
+   - name: API_URL
+     value: http://$(SERVICE_LAYER_SERVICE_HOST):$(SERVICE_LAYER_SERVICE_PORT)	
+  
+   
+

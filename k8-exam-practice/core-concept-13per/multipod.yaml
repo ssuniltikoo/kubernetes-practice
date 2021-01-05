@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+   app: multipod
+  name: multi
+spec:
+  containers:
+  - image: busybox
+    name: busy1
+    command: ["echo","-c" ,"hello" ,"sleep 3600"]
+  - image: busybox
+    name: busy2
+    args:
+    - /bin/sh
+    - -c
+    - echo hello from busybox2; sleep 3600

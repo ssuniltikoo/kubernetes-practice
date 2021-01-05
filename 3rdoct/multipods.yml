@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: multi-pods
+  name: multi-pod
+spec:
+  containers:
+  - image: busybox
+    name: multi-pod1
+    command: ["bin/sh", "-c", "ls; sleep 3600"]
+  - image: busybox
+    name: multi-pod2
+    command: ["bin/sh", "-c", "echo hello world; sleep 3600"]
+  - image: busybox
+    name: multi-pod3
+    command: ["/bin/sh", "-c", "echo this is third conatiner; sleep 3600"]

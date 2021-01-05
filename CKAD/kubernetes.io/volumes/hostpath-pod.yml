@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: hostpath
+  name: hostpath
+spec:
+  volumes:
+  - name: test-hostpath
+    hostPath:
+     path: /var/tikoo
+     type: DirectoryOrCreate
+  containers:
+  - image: nginx
+    name: hostpath
+    volumeMounts:
+    - name: test-hostpath
+      mountPath: /var/test-pd
+    ports:
+    - containerPort: 80
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}

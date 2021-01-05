@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: customerinfo-deployment
+  labels:
+    app: customerinfo
+spec:
+  selector:
+    matchLabels:
+      app: customerinfo
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: customerinfo
+    spec:
+      containers:
+        - name: customerinfo
+          image: sunil401/customer-info
+          # Use the localhost:32000 path to use image from registry service
+          # e.g.  image: localhost:32000/hello-app:v3
+          ports:
+            - containerPort: 80

@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: server
+    tier: middlelayer
+  name: server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+     tier: middlelayer
+  template:
+    metadata:
+      labels:
+        app: count
+        tier: middlelayer
+    spec:
+      containers:
+      - image: lrakai/microservices:server-v1
+        name: server
+        ports:
+        - containerPort: 8080
+        env:
+        - name: REDIS_URL
+          value: redis://$(BACKEND_SERVICE_HOST):$(BACKEND_SERVICE_PORT_REDIS)
+        - name: DEBUG
+          value: express:*
+        readinessProbe:
+         httpGet:   
+          path: /probe/readiness
+          port: 8080
+         initialDelaySeconds: 15
+        livenessProbe:
+         httpGet:
+          path: /probe/liveness
+          port: 8080
+         initialDelaySeconds: 5
+        resources:
+         limits:
+          cpu: "10m"
+          memory: "64Mi"
+         requests:
+          cpu: "5m"
+          memory: "2Mi"

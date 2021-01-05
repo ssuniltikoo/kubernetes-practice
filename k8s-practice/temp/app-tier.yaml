@@ -1,0 +1,56 @@
+apiVersion: v1
+kind: Service
+metadata:
+ name: app-tier
+ labels:
+  app: multi-pods
+spec:
+ ports:
+ - protocol: TCP
+   port: 8080
+   name: serve
+ selector:
+  tier: service
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: app-tier
+ labels:
+  app: multi-pods
+  tier: service
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+   tier: service
+ template:
+  metadata:
+   labels:
+    app: multi-pods
+    tier: service
+  spec:
+   containers:
+   - name: server
+     image: lrakai/microservices:server-v1
+     ports:
+     - containerPort: 8080
+     resources:
+      requests:
+       cpu: 5m
+     env:
+     - name: REDIS_URL
+       value: redis://$(DB_SERVICE_HOST):$(DB_SERVICE_PORT_REDIS)
+     - name: debug
+       value: express*
+     livenessProbe:
+      httpGet:
+       path: /probe/liveness
+       port: serve
+      initialDelaySeconds: 5
+     readinessProbe:
+      httpGet:
+       path: /probe/readiness
+       port: serve
+      initialDelaySeconds: 3
+ 

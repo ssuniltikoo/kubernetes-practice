@@ -1,0 +1,1000 @@
+   69  pwd
+   70  exit
+   71  sudo add-apt-repository ppa:yannubuntu/boot-repair
+   72  sudo apt-get update
+   73  sudo apt-get install boot-repair
+   74  boot-repair
+   75  sudo fdisk -l
+   76  cd /boot
+   77  cd /grub
+   78  cd grub
+   79  ls -lart
+   80  gedit grub.cfg
+   81  ls -lart
+   82  exit
+   83  ls -lart
+   84  cls
+   85  clear
+   86  pyhton
+   87  python -version
+   88  python -h
+   89  java -version
+   90  exit
+   91  java -version
+   92  docker --version
+   93  docker run heelo-world
+   94  sudo docker run heelo-world
+   95  sudo docker run hello-world
+   96  pwd
+   97  ls -la
+   98  mkdir /opt/jdk
+   99  sudo mkdir /opt/jdk
+  100  403304
+  101  sudo mkdir /opt/jdk
+  102  pwd
+  103  ls -la
+  104  sudo tar -zxf jdk jdk-8u202-linux-x64.tar.gz -C /opt/jdk
+  105  tar -zxf jdk jdk-8u202-linux-x64.tar.gz -C /opt/jdk
+  106  tar -zxf jdk jdk-8u202-linux-x64.tar.gz -c /opt/jdk
+  107  tar -zxf jdk jdk-8u202-linux-x64.tar.gz -C /opt/jdk
+  108  ls 
+  109  sudo mkdir /opt/jdk
+  110  ls -lart
+  111  $mkdir /opt/jdk
+  112  ls
+  113  mkdir opt
+  114  ls
+  115  cd opt/
+  116  mkdir jdk
+  117  ls
+  118  cd ..
+  119  pwd
+  120  ls -la
+  121  ls
+  122  tar -zxf jdk jdk-8u202-linux-x64.tar.gz -C /opt/jdk
+  123  cd opt/jdk/
+  124  tar -zxf jdk jdk-8u202-linux-x64.tar.gz -C /opt/jdk
+  125  tar -zxf jdk jjdk.tar.gz -C /opt/jdk
+  126  sudo $tar -zxf jdk jjdk.tar.gz -C /opt/jdk
+  127  $tar -zxf jdk jjdk.tar.gz -C /opt/jdk
+  128  tar -zxf jdk jjdk.tar.gz 
+  129  update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_202/bin/java 100
+  130  cd ..
+  131  update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_202/bin/java 100
+  132  sudo update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_202/bin/java 100
+  133  pwd
+  134  sudo update-alternatives --install /home/sohit/usr/bin/java java /opt/jdk/jdk1.8.0_202/bin/java 100
+  135  sudo update-alternatives --install "/usr/bin/java" " java" /opt/jdk/jdk1.8.0_202/bin/java 100
+  136  sudo update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_202/bin/java 100
+  137  sudo update-alternatives --install "/usr/bin/java" " java" "/opt/jdk/jdk1.8.0_202/bin/java" 100
+  138  sudo update-alternatives --install "/usr/bin/java" "java" "/opt/jdk/jdk1.8.0_202/bin/java" 100
+  139  ls /opt/jdk
+  140  tar -zxf jdk-8u5-linux-x64.tar.gz -C /opt/jdk
+  141  version
+  142  sudo
+  143  sudo -r
+  144  sudo -u
+  145  cls
+  146  clear
+  147  sudo 
+  148  sudo role
+  149  isb_release -a
+  150  isb_release
+  151  lsb_release -a
+  152  sudo apt-get remove docker-engine docker.io containerd runc
+  153  sudo apt-get update
+  154  sudo apt-get install \apt-transport-https \ca-certificates \ curl\ gnupg-agent \ software-properties-common
+  155  sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg-agent     software-properties-common
+  156  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  157  sudo apt-key fingerprint 0EBFCD88
+  158  lsb_release -cs
+  159  $ sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+  160     $(lsb_release -cs) \
+  161     stable"
+  162  $ sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+  163     $(lsb_release -cs) \
+  164     stable"
+  165  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+  166     $(lsb_release -cs) \
+  167     stable" nightly test
+  168  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+  169     $(lsb_release -cs) \
+  170     stable" nightly 
+  171  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+  172     $(lsb_release -cs) \
+  173     stable" 
+  174  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+  175     $(lsb_release -cs) \
+  176     stable" "nightly" "test"
+  177  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+  178     $(lsb_release -cs) \
+  179     stable" 
+  180  sudo apt-get update
+  181  docker -version
+  182  docker --version
+  183  sudo apt-get install docker-ce docker-ce-cli containerd.io
+  184  apt-cache madison docker-ce
+  185  sudo apt-get install docker-ce=<5:18.09.1~3-0~ubuntu-xenial> docker-ce-cli=<5:18.09.1~3-0~ubuntu-xenial>containerd.io
+  186  sudo apt-get install docker-ce=<5:19.03.1~3-0~ubuntu-bionic> docker-ce-cli=<5:19.03.1~3-0~ubuntu-bionic> containerd.io
+  187  sudo apt-get install docker-ce=5:19.03.1~3-0~ubuntu-bionic docker-ce-cli=5:19.03.1~3-0~ubuntu-bionic containerd.io
+  188  sudo docker run hello-world
+  189  docker run hello-world
+  190  sudo docker run hello-world
+  191  docker ps
+  192  403304
+  193  docker ps
+  194  sudo docker ps
+  195  sudo docker ls
+  196  sudo docker images
+  197  sudo docker run hello-world
+  198  sudo docker ps
+  199  sudo apt install ubuntu-make
+  200  umake ide idea
+  201  sudo add-apt-repository ppa:webupd8team/java
+  202  sudo apt-get update
+  203  sudo apt-get install oracle-java8-installer
+  204  sudo apt-get install oracle-java8-set-default
+  205  sudo apt-get install oracle-java8-installer
+  206  sudo apt update
+  207  java -version
+  208  apt install openjdk-8-jre-headless
+  209  sudo apt install openjdk-8-jre-headless
+  210  sudo apt install openjdk-9-jre-headless
+  211  java -version
+  212  sudo apt install openjdk-8-jdk
+  213  java -version
+  214  clear
+  215  sudo add-apt-repository ppa:webupd8team/java
+  216  sudo apt install oracle-java8-installer
+  217  sudo apt-get install python-software-properties
+  218  sudo apt-get install oracle-java8-installer
+  219  ls -la
+  220  cd /etc
+  221  ls -la
+  222  cd apt
+  223  cd sources.list.d/
+  224  ls -la
+  225  sudo apt-get update
+  226  ls -la
+  227  sudo add-apt-repository ppa:webupd8team/java
+  228  ls -la
+  229  sudo apt-get update
+  230  sudo oracle-java8-set-default
+  231  sudo install  oracle-java8-set-default
+  232  sudo apt  install  oracle-java8-set-default
+  233  sudo apt upgrade
+  234  sudo add-apt-repository ppa:linuxuprising/java
+  235  sudo apt update
+  236  sudo apt install oracle-java8-installer
+  237  sudo apt install oracle-java11-installer
+  238  cd /
+  239  pwd
+  240  cd home/
+  241  cd sohit/
+  242  ls -la
+  243  tar -zxf temp.tar.gz -C /opt/jdk
+  244  cd ..
+  245  ls
+  246  cd sohit/
+  247  ls
+  248  cd D
+  249  cd Downloads/
+  250  ls 
+  251  tar -zxf temp.tar.gz -C /opt/jdk
+  252  cd ..
+  253  pwd
+  254  cd opt/jdk/
+  255  cd ..
+  256  ls /opt/jdk
+  257  cd opt/
+  258  cd jdk/
+  259  ls
+  260  ls -la
+  261  tar -zxf temp.tar.gz -C /opt/jdk
+  262  cd home
+  263  cd /home
+  264  cd sohit/
+  265  cd Downloads/
+  266  ls
+  267  sudo tar -zxf temp.tar.gz -C /opt/jdk
+  268  tar -zxf temp.tar.gz -C /opt/jdk
+  269  cd home
+  270  cd /
+  271  ls
+  272  cd opt/
+  273  ls
+  274  cd j
+  275  cd jdk/
+  276  ls
+  277  cd jdk1.8.0_202/
+  278  ls
+  279  cd bin/
+  280  ls
+  281  ls opt/jdk
+  282  cd /
+  283  ls opt/jdk/
+  284  update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_05/bin/java 100
+  285  update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_202/bin/java 100
+  286  sudo update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_202/bin/java 100
+  287  sudo update-alternatives --install /usr/bin/java javac /opt/jdk/jdk1.8.0_202/bin/java 100
+  288  sudo update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk1.8.0_202/bin/java 100
+  289  update-alternatives --display java
+  290  java -version
+  291  sudo
+  292  java -version
+  293  sudo update-alternatives --remove "java" "/usr/lib/jvm/jdk110.04/bin/java
+  294  "
+  295  sudo update-alternatives --remove "java" "/usr/lib/jvm/jdk110.04/bin/java"
+  296  403304
+  297  sudo update-alternatives --remove "javac" "/usr/lib/jvm/jdk110.04/bin/javac"
+  298  sudo update-alternatives --remove "javaws" "/usr/lib/jvm/jdk110.04/bin/javaws"
+  299  sudo rm -r /usr/lib/jvm/jdk11.0.4
+  300  sudo update-alternatives --remove "java" "/usr/lib/jvm/jdk11.0.4/bin/java"
+  301  sudo update-alternatives --remove "javaws" "/usr/lib/jvm/jdk11.0.4/bin/javaws"
+  302  sudo update-alternatives --remove "javac" "/usr/lib/jvm/jdk11.0.4/bin/javac"
+  303  pwd
+  304  cd /
+  305  sudo rm -r /usr/lib/jvm/jdk11.0.4
+  306  sudo apt-get purge openjdk*
+  307  sudo apt-get purge --auto-remove openjdk*
+  308  java -version
+  309  sudo bash -c 'ls -d /home/*/.java' | xargs sudo rm -rf
+  310  java -version
+  311  sudo update-alternatives --remove "javac" "/usr/lib/jvm/jdk1.8.0_202/bin/javac"
+  312  sudo update-alternatives --remove "javaws" "/usr/lib/jvm/jdk1.8.0_202/bin/javaws"
+  313  sudo update-alternatives --remove "java" "/usr/lib/jvm/jdk1.8.0_202/bin/java"
+  314  java -version
+  315  for g in ControlPanel java java_vm javaws jcontrol jexec keytool mozilla-javaplugin.so orbd pack200 policytool rmid rmiregistry servertool tnameserv unpack200 appletviewer apt extcheck HtmlConverter idlj jar jarsigner javac javadoc javah javap jconsole jdb jhat jinfo jmap jps jrunscript jsadebugd jstack jstat jstatd native2ascii rmic schemagen serialver wsgen wsimport xjc xulrunner-1.9-javaplugin.so; do sudo update-alternatives --remove-all $g; done
+  316  sudo updatedb
+  317  sudo locate -b '\pack200'
+  318  sudo apt-get purge openjdk-\* icedtea-\* icedtea6-\*
+  319  sudo locate -b '\pack200'
+  320  sudo locate -help
+  321  ls
+  322  cd opt/
+  323  ls
+  324  sudo rm -help
+  325  sudo rm -jdk
+  326  help
+  327  help rf
+  328  help -rf
+  329  sudo rd -help;
+  330  rd -help
+  331  sudo rm -r jdk/
+  332  ls
+  333  cd containerd/
+  334  ls
+  335  sudo ls
+  336  sudo cd bin
+  337  cd bin
+  338  ls
+  339  sudo ls
+  340  ls
+  341  sudo ls
+  342  cd ..
+  343  pwd
+  344  cd lib
+  345  ls
+  346  sudo ls
+  347  pwd
+  348  cd /
+  349  pwd
+  350  sudo locate -b '\pack200'
+  351  java -version
+  352  logoff
+  353  sudo logoff
+  354  exit
+  355  python
+  356  java
+  357  sudo apt install openjdk-8
+  358  sudo apt install default-jdk
+  359  exit
+  360  mvn clean
+  361  maven --version
+  362  maven --config
+  363  mvn --version
+  364  sudo snap install notepad-plus-plus
+  365  git init
+  366  git commit -m "add eureka server"
+  367  git config --global user.email "ssunil.tikoo@gmail.com"
+  368  git config --global user.name "sunil tikoo"
+  369  git commit -m "add eureka server"
+  370  git add .
+  371  git commit -m "add eureka server"
+  372  git remote add origin https://github.com/ssuniltikoo/eureka-server.git
+  373  git push -u origin master
+  374  exit
+  375  vi .gitignore
+  376  ls -la
+  377  mvn clean
+  378  maven clean
+  379  git remote add origin https://github.com/ssuniltikoo/eureka-server.git
+  380  git add .
+  381  git remote add origin https://github.com/ssuniltikoo/eureka-server.git
+  382  git push -u origin master
+  383  exit
+  384  git status
+  385  git clone https://github.com/ssuniltikoo/spring-cloud-demo.git
+  386  git slog
+  387  ls -la
+  388  cd spring-cloud-demo/
+  389  ls -la
+  390  git log
+  391  exit
+  392  version
+  393  root
+  394  help
+  395  info bash
+  396  echo
+  397  echo hello
+  398  sudo apt install openjdk-8-jdk
+  399  java -version
+  400  history
+  401  sudo update-alternatives --config java
+  402  java -version
+  403  /etc/environment
+  404  nano /etc/environment
+  405  pwd
+  406  cd home
+  407  pwd
+  408  cd ..
+  409  ls -la
+  410  cd sohit/
+  411  ls -la
+  412  mkdir java-workspace
+  413  ls -la
+  414  cd java-workspace/
+  415  help copy
+  416  help
+  417  sudo snap install postman
+  418  ls -la
+  419  cd eureka-client-demo/
+  420  git init
+  421  git add .
+  422  git commit -m "eureka client service"
+  423  git add .
+  424  git log
+  425  git add git remote add origin https://github.com/ssuniltikoo/eureka-client-service.git
+  426  git remote add origin https://github.com/ssuniltikoo/eureka-client-service.git
+  427  git push -u origin master
+  428  exit
+  429  git init
+  430  git add .
+  431  git commit -m "add file"
+  432  git pull origin https://github.com/ssuniltikoo/eureka-service-server.git
+  433  https://github.com/ssuniltikoo/eureka-service-server.git
+  434  git add remote https://github.com/ssuniltikoo/eureka-service-server.git
+  435  git add origin https://github.com/ssuniltikoo/eureka-service-server.git
+  436  git push -U remote
+  437  git push origin/master https://github.com/ssuniltikoo/eureka-service-server.git 
+  438  exit
+  439  ls -la
+  440  md eureka-server-demo
+  441  mdir eureka-server-demo
+  442  mkdir eureka-server-demo
+  443  cd eureka-server-demo/
+  444  git clone git@github.com:ssuniltikoo/eureka-server.git
+  445  git clone https://github.com/ssuniltikoo/eureka-server.git
+  446  ls -la
+  447  cls
+  448  clear
+  449  cd..
+  450  cd ..
+  451  mkdir boot-eureka-server
+  452  git clone https://github.com/ssuniltikoo/eureka-server.git
+  453  cd boot-eureka-server/
+  454  git log
+  455  ls -la
+  456  git pull origin/master
+  457  ls -la
+  458  cd ..
+  459  ls -la
+  460  mvn clean compile
+  461  git
+  462  git status
+  463  ls -la
+  464  cd java-workspace/
+  465  git status
+  466  ls -la
+  467  cd config-server
+  468  git status
+  469  git add .
+  470  git commit -m "updated"
+  471  git log
+  472  cd ..
+  473  ls -la
+  474  exit
+  475  docker info
+  476  exit
+  477  git-init
+  478  git init
+  479  git add .
+  480  git status
+  481  git add .
+  482  git status
+  483  git commit -m "initialized project"
+  484  git status
+  485  git pull origin https://github.com/ssuniltikoo/gateway-service/tree/master
+  486  git pull https://github.com/ssuniltikoo/gateway-service.git
+  487  git status
+  488  git branch
+  489  git push origin master
+  490  git push https://github.com/ssuniltikoo/gateway-services
+  491  git status
+  492  git push --set upstream https:github.com/ssuniltikoo/gateway-service master
+  493  git status
+  494  git checkout .
+  495  git status
+  496  git push --set upstream https:github.com/ssuniltikoo/gateway-service master
+  497  git push --set upstream https:github.com/ssuniltikoo/gateway-servicee master
+  498  git pull origin https://github.com/ssuniltikoo/gateway-service master
+  499  git push --set upstream https:github.com/ssuniltikoo/gateway-service master
+  500  git log
+  501  git push --set upstream https:github.com/ssuniltikoo/gateway-services master
+  502  git remote add origin https://github.com/ssuniltikoo/demo-gateway-service.git
+  503  git push -u origin master
+  504  exit
+  505  cd workspace/
+  506  ls -la
+  507  cd ..
+  508  cd java-workspace/
+  509  ls -la
+  510  git status
+  511  git --version
+  512  git %home%
+  513  git %HOME%
+  514  ls -la
+  515  cd eureka-server-demo/
+  516  ls -la
+  517  git status
+  518  cd ..
+  519  ls -la
+  520  git clone https://github.com/ssuniltikoo/gateway-service.git
+  521  ls -la
+  522  sudo snap install microk8s --classic
+  523  hello
+  524  echo hello
+  525  sudo snap install microk8s --classic
+  526  snap info microk8s
+  527  sudo snap install microk8s --classic --channel=1.14/stable
+  528  microk8s.status
+  529  exit
+  530  microk8s.status
+  531  sudo microk8s.status
+  532  sudo snap install microk8s --classic --channel=1.14/stable
+  533  rep -E --color 'vmx|svm' /proc/cpuinfo
+  534  grep -E --color 'vmx|svm' /proc/cpuinfo
+  535  exit
+  536  git status
+  537  git checkout .
+  538  git log
+  539  git push origin master
+  540  git pull origin master
+  541  git init
+  542  git set upstream --help
+  543  git log
+  544  git branch
+  545  git remote branch
+  546  git remote
+  547  git remote get-url
+  548  git remote get-url -all
+  549  git remote get-url --all
+  550  git log
+  551  git init
+  552  git push https://github.com/ssuniltikoo/eureka-service-server master
+  553  git remote add origin https://github.com/ssuniltikoo/eurek-server-service-for-client.git
+  554  git init
+  555  git add readme.md
+  556  git add .
+  557  git commit -m "updates"
+  558  git remote add origin https://github.com/ssuniltikoo/eurek-server-service-for-client.git
+  559  git log
+  560  git reset d32c3af335af622ba4129a822b59f1aab2dd8efd
+  561  git rebase d32c3af335af622ba4129a822b59f1aab2dd8efd
+  562  git status
+  563  git log
+  564  git reset 2df32c5e92394ae0ebd1d4e428e4082d0d18c8e1
+  565  git log
+  566  git reset 2df32c5e92394ae0ebd1d4e428e4082d0d18c8e1
+  567  mvn clean
+  568  maven clean
+  569  git init
+  570  git add .
+  571  git commit -m "code clean up- init repo"
+  572  git remote add origin https://github.com/ssuniltikoo/eurek-server-service-for-client.git
+  573  git push -u origin master
+  574  minikube -version
+  575  minikube version
+  576  history
+  577  microk8s.status
+  578  sudo microk8s.status
+  579  microk8s.kubectl
+  580  sudo microk8s.kubectl
+  581  microk8s.kubectl
+  582  sudo microk8s.kubectl
+  583  kubectl version
+  584  kubectl 
+  585  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+  586  kubectl 
+  587  chmod +x ./kubectl 
+  588  sudo mv ./kubectl /usr/local/bin/kubectl
+  589  kubectl version --client
+  590  kubectl cluster -info
+  591  kubectl cluster -info  dump
+  592  kubectl cluster -info dump
+  593  cluster info
+  594  kubectl cluster -info
+  595  exit
+  596  docker info
+  597  docker --version
+  598  docker-machine start
+  599  sudo docker info
+  600  dudo docker images
+  601  docker images
+  602  dudo docker images
+  603  sudo docker info
+  604  sudo docker start
+  605  sudo docker-machine start
+  606  sudo docker
+  607  sudo docker ps
+  608  sudo docker images
+  609  sudo docker run hello-world:latest
+  610  sudo kubectl --info
+  611  exit
+  612  mvn clean
+  613  maven clean
+  614  docker version
+  615  docker-machine start
+  616  docker info
+  617  sudo docker info
+  618  sudo docker ps
+  619  sudo docker images
+  620  sudo docker run hello-world
+  621  exit
+  622  docker info
+  623  sudo docker info
+  624  docker images
+  625  sudo docker images
+  626  docker pull alpine
+  627  sudo docker pull alpine
+  628  docker mages
+  629  sudo docker images
+  630  docker run alpine:latest
+  631  sudo docker run alpine:latest
+  632  docker ps
+  633  sudo docker ps
+  634  sudo docker run -t alpine
+  635  mvn test
+  636  docker build
+  637  docker build -t customer-info
+  638  docker build help
+  639  docker build --help
+  640  docker build Dockerfile
+  641  ls -lart
+  642  docker build -t target/customer-info-1.0-SNAPSHOT.jar
+  643  docker build  target/customer-info-1.0-SNAPSHOT.jar
+  644  cd target/
+  645  docker build customer-info-1.0-SNAPSHOT.jar
+  646  cd ..
+  647  sudo docker build -t target/customer-info-1.0-SNAPSHOT.jar
+  648  sudo docker build  target/customer-info-1.0-SNAPSHOT.jar .
+  649  docker build  customer-info .
+  650  docker build customer-info-1.0-SNAPSHOT.jar .
+  651  docker build -t customer-info/customer-info-1.0-SNAPSHOT.jar .
+  652  docker build -t customer-info .
+  653  sudo docker build -t customer-info .
+  654  docker ps
+  655  sudo docker ps
+  656  docker stop b7f7864abf18
+  657  sudo docker stop b7f7864abf18
+  658  docker ps
+  659  sudo docker ps
+  660  sudo docker stop alpine
+  661  sudo docker stop 040cd
+  662  sudo docker ps
+  663  docker images ps
+  664  403304
+  665  sudo docker images
+  666  sudo docker run customer-info
+  667  sudo docker images
+  668  sudo docker ps
+  669  docker stop
+  670  docker stop --help
+  671  docker images
+  672  sudo docker images
+  673  sudo docker ps
+  674  exit
+  675  sudo docker images
+  676  docker ps
+  677  docker images ps
+  678  sudo docker ps
+  679  sudo docker images
+  680  sudo docker run -it customer-info:latest
+  681  sudo docker ps
+  682  sudo docker stop 0e3568
+  683  sudo docker ps
+  684  exit
+  685  pwd
+  686  cd /
+  687  pwd
+  688  ls 
+  689  cd var/
+  690  ls 
+  691  cd lib
+  692  ls
+  693  cd docker
+  694  ls
+  695  sudo ls
+  696  cd containers
+  697  sudo cd containers
+  698  pwd
+  699  ls
+  700  ls -la
+  701  sudo ls-la
+  702  sudo ls
+  703  sudo cd image
+  704  cd image
+  705  sudo cd image
+  706  cd image
+  707  sudo cd
+  708  cd --help
+  709  ls
+  710  sudo ls
+  711  cd /
+  712  ls
+  713  pwd
+  714  exit
+  715  sudo docker images
+  716  sudo docker ps
+  717  sudo docker run customer-info:latest
+  718  sudo docker run -it  customer-info:latest 80:8085
+  719  docker pull sunil401/customer-info:latest
+  720  sudo docker pull sunil401/customer-info:latest
+  721  docker images
+  722  sudo docker images
+  723  sudo docker run sunil401/customer-info:latest 80:8084
+  724  exit
+  725  mcrok8s.status --wait-ready
+  726  microk8s.status --wait-ready
+  727  clear
+  728  microk8s.kubectl get nodes
+  729  microk8s.kubectl get services
+  730  microk8s
+  731  microk8s.kubectl
+  732  microk8s.kubectl create deployment
+  733  clear
+  734  microk8s.kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
+  735  microk8s.kubectl get pods
+  736  microk8s.kubectl get services
+  737  microk8s.kubectl get 
+  738  microk8s.kubectl get pods
+  739  microk8s.kubectl get all
+  740  microk8s.kubectl stop
+  741  microk8s stop
+  742  microk8s.stop
+  743  microk8s.kubectl get pods
+  744  exit
+  745  docker info
+  746  sudo docker info
+  747  sudo docker ps
+  748  sudo docker stop b33b76
+  749  sudo docker info
+  750  sudo docker version
+  751  sudo docker-machine
+  752  sudo docker-machine start
+  753  sudo docker machine start
+  754  sudo docker info
+  755  sudo docker ps
+  756  docker inspect b0fic48418d1
+  757  sudo docker inspect b0fic48418d1
+  758  sudo docker inspect b0f1c48418d1
+  759  docker images
+  760  sudo docker images
+  761  docker push sunil401/customer-info:latest
+  762  sudo docker push sunil401/customer-info:latest
+  763  sudo docker push customer-info:latest
+  764  docker tag customer-info:latest sunil401/customer-info:latest
+  765  sudo docker tag customer-info:latest sunil401/customer-info:latest
+  766  sudo docker push sunil401/customer-info:latest
+  767  sudo docker push customer-info:latest
+  768  docker login
+  769  docker login -u "sunil401" -p "stgit@404" docker.io
+  770  docker login -u "sunil401" --password-stdn "stgit@404" docker.io
+  771  docker login -u "sunil401" --password-stdn  docker.io
+  772  docker login -u "sunil401" --password -stdn "stgit@404" docker.io
+  773  sudo docker tag customer-info sunil401/customer-info:latest
+  774  sudo docker pushsunil401/customer-info:latest
+  775  sudo docker push sunil401/customer-info:latest
+  776  docker push sunil401/customer-info:latest
+  777  sudo docker push sunil401/customer-info:latest
+  778  docker tag customer-info sunil401/customer-info:latest
+  779  sudo docker tag customer-info sunil401/customer-info:latest
+  780  sudo docker push sunil401/customer-info:latest
+  781  docker login --username=sunil401 --email=ssunil.tikoo@gmail.com docker.io
+  782  docker login --username=sunil401 docker.io
+  783  sudo docker push sunil401/customer-info:latest
+  784  docker login --username=sunil401 
+  785  sudo docker login
+  786  sudo docker tag customer-info sunil401/customer-info:latest
+  787  sudo docker push sunil401/customer-info:latest
+  788  docker ps
+  789  sudo docker ps
+  790  docker stop b0f1c48
+  791  sudo docker stop b0f1c48
+  792  history
+  793  docker images
+  794  sudo docker images
+  795  docker rm customer-info
+  796  sudo docker rm customer-info
+  797  sudo docker image  rm customer-info
+  798  docker images
+  799  sudo docker images
+  800  sudo docker run customer:info
+  801  sudo docker login
+  802  sudo docker pull image customer-info:latest
+  803  sudo docker image  pull  customer-info:latest
+  804  sudo docker image  pull sunil401/ customer-info:latest
+  805  sudo docker  pull sunil401/ customer-info:latest
+  806  sudo docker  pull sunil401/ customer-info
+  807  sudo docker image  pull  customer-info:latest
+  808  docker login
+  809  sudo docker login
+  810  sudo docker ps
+  811  sudo docker stop e95f1e34
+  812  cls
+  813  clear
+  814  kubectl -info
+  815  kubectl --version
+  816  sudo snap install microk8s --classic
+  817  sudo snap info microk8s
+  818  clear
+  819  microk8s.status
+  820  sudo microk8s.status
+  821  microk8s.kubectl
+  822  sudo microk8s.kubectl
+  823  clear
+  824  sudo snap info microk8s
+  825  clear
+  826  microk8s.status
+  827  sudo microk8s.status
+  828  sudo microk8s.status --wait-ready
+  829  microk8s.kubectl
+  830  sudo microk8s.kubectl
+  831  clear
+  832  snap info microk8s
+  833  clear
+  834  sudo usermod -a -G microk8s $USER
+  835  su -$USER
+  836  su - $USER
+  837  logout
+  838  exit
+  839  grep -E --color 'vmx|svm' /proc/cpuinfo
+  840  clear
+  841  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+  842  chmod +x ./kubectl
+  843  sudo mv ./kubectl /usr/local/bin/kubectl
+  844  kubectl version --client
+  845  sudo apt-get update && sudo apt-get install -y apt-transport-https
+  846  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+  847  echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
+  848  sudo apt-get update
+  849  sudo apt-get install -y kubectl
+  850  kubectl version --client
+  851  kubectl cluster-info
+  852  sudo kubectl cluster-info
+  853  kubectl cluster-info dump
+  854  sudo kubectl cluster-info dump
+  855  ls -la
+  856  cd /
+  857  ls -la
+  858  cd etc
+  859  l s-la
+  860  ls -la
+  861  cd docker
+  862  ls -la
+  863  vi daemon.json
+  864  cd /
+  865  cd etc
+  866  cd docker
+  867  ls -la
+  868  ls -lart
+  869  cd .
+  870  ls -la
+  871  vi daemon.json
+  872  cd /
+  873  cd etc
+  874  cd docker
+  875  cd /var
+  876  cd tmp
+  877  cd daemon.json
+  878  ls -lart
+  879  cd /
+  880  cd etc
+  881  cd docker
+  882  ls -alrt
+  883  vim daemon.json
+  884  vi daemon.json
+  885  ls -la
+  886  ls -lart
+  887  vi daemon.json
+  888  ls -lart
+  889  vi daemon.json
+  890  ls -lart
+  891  vi daemon.json
+  892  cd var
+  893  cd /var
+  894  cd tmp
+  895  ls -lart
+  896  rm daemon.json.swp
+  897  ls -lart
+  898  rm daemon.json.swo
+  899  rm daemon.json.swn
+  900  ls -lart
+  901  exit
+  902  vi daemon.json
+  903  microk8s.start
+  904  microk8s.kubectl cluster-info
+  905  microk8s.kubectl get all
+  906  snap list
+  907  microk8s.kubectl version
+  908  microk8s.kubectl version --short
+  909  clear
+  910  microk8s.kubectl version --short
+  911  microk8s.kubectl get nodes
+  912  microk8s.kubectl get pods
+  913  microk8s.kubectl get nodes -o wide
+  914  dpkg -l docker
+  915  docker info
+  916  docker version
+  917  ps -ef | grep docker
+  918  ps -ef 
+  919  ps -ef | grep docker
+  920  clear
+  921  microk8s.kubectl get namespaces
+  922  microk8s.kubectl get all --all-namespaces -o wide
+  923  microk8s.kubectl get all
+  924  microk8s.kubectl get all --all-namespaces -o wide
+  925  microk8s.
+  926  microk8s.kubectl.
+  927  microk8s.kubectl
+  928  microk8s.kubectl.auth
+  929  microk8s.kubectl auth
+  930  clear
+  931  microk8s.kubectl inspect
+  932  microk8s.
+  933  microk8s.inspect
+  934  microk8s.docker
+  935  microk8s.config
+  936  clear
+  937  microk8s.docker
+  938  microk8s.kubectl docker
+  939  microk8s.inspect
+  940  microk8s.kubectl get nodes
+  941  microk8s.kubectl get all
+  942  microk8s.kubectl expose kubernetes-bootcamp --port 80 --target-port --type ClusterIP
+  943  microk8s.kubectl run nginx --image nginx
+  944  microk8s.kubectl get all
+  945  which docker
+  946  microk8s.docker images
+  947  microk8s.kubectl.docker images
+  948  microk8s.
+  949  microk8s.kubectl scale deploy nginx --replicas=2
+  950  clear
+  951  microk8s.kubectl get all
+  952  microk8s.kubectl expose deploy nginx --port 80 --target-port --type ClusterIP
+  953  microk8s.kubectl expose deploy nginx --port 80 --target-port --type Cluster-IP
+  954  microk8s.kubectl expose deploy nginx --port 80 --target-port type Cluster-IP
+  955  microk8s.kubectl get all -o wide
+  956  whick elinks
+  957  which elinks
+  958  sudo apt-get update && apt-get install -y elinks
+  959  sudo apt-get update && sudo apt-get install -y elinks
+  960  which elinks
+  961  elinks 10.152.183.240
+  962  :q
+  963  ls -lart
+  964  which elinks
+  965  microk8s.kubectl get all -o wide
+  966  microk8s.kubectl expose deploy kubernetes-bootcamp --port 81 --target-port type Cluster-IP
+  967  microk8s.kubectl get all -o wide
+  968  elinks 10.152.183.7
+  969  :q
+  970  exit
+  971  ls -l
+  972  docker info
+  973  sudp docker info
+  974  sudo docker info
+  975  docker images
+  976  sudo docker ps
+  977  sudo docker images
+  978  clear
+  979  sudo docker images
+  980  docker run -it customer-info:latest
+  981  sudo docker run -it customer-info:latest
+  982  sudo docker run -it sunil401/ customer-info:latest
+  983  sudo docker images
+  984  docker run -it 5f8b85a2bad4
+  985  sudo docker run -it 5f8b85a2bad4
+  986  docker --version
+  987  sudo docker --version
+  988  sudo docker info
+  989  docker --help
+  990  sudo docker info
+  991  docker --help
+  992  sudo docker search
+  993  sudo docker search customer-info
+  994  sudo docker stats
+  995  clear
+  996  sudo docker --help
+  997  clear
+  998  sudo docker ps
+  999  sudo docker inspect
+ 1000  sudo docker inspect 94693c
+ 1001  clear
+ 1002  sudo docker ps
+ 1003  sudo docker exec -it app.jar /actuator/info /bin/bash
+ 1004  sudo docker exec -it java -jar app.jar /actuator/info /bin/bash
+ 1005  sudo docker exec -it vigorous_bose ls-la /bin/bash
+ 1006  sudo docker exec -it vigorous_bose pwd /bin/bash
+ 1007  sudo docker exec -it vigorous_bose la-lart /bin/bash
+ 1008  sudo docker exec -it vigorous_bose echo /bin/bash
+ 1009  sudo docker exec -it vigorous_bose grep /bin/bash
+ 1010  sudo docker ps
+ 1011  sudo docker exec -it javial_wright
+ 1012  sudo docker exec -it javial_wright ls
+ 1013  sudo docker exec -it jovial_wright ls
+ 1014  cd temp-stuff/
+ 1015  ls
+ 1016  cd /
+ 1017  cd tmp/
+ 1018  ls
+ 1019  cd /
+ 1020  cd temp
+ 1021  cd tem
+ 1022  cd temp-stuff
+ 1023  cd /
+ 1024  ls
+ 1025  ls -lart
+ 1026  cd root
+ 1027  sudo cd root
+ 1028  cd root
+ 1029  sudo cd root
+ 1030  cd bin
+ 1031  ls
+ 1032  java --version
+ 1033  java 
+ 1034  java -version
+ 1035  cd /
+ 1036  pwd
+ 1037  ls
+ 1038  cd proc/
+ 1039  ls
+ 1040  cd diskstats
+ 1041  vim diskstats 
+ 1042  sudo vim diskstats 
+ 1043  vi diskstats 
+ 1044  vi zoneinfo 
+ 1045  sudo docker ps
+ 1046  sudo docker stats
+ 1047  sudo docker images
+ 1048  sudo docker login
+ 1049  sudo docker images
+ 1050  sudo docker push customer-info
+ 1051  sudo docker push sunil401/customer-info:latest
+ 1052  history
+ 1053  clear
+ 1054  history 
+ 1055  clear
+ 1056  history dockercommands.txt
+ 1057  history >dockercommands.txt
+ 1058  history > >dockercommands.txt
+ 1059  history >> dockercommands.txt
+ 1060  history > dockercommands.txt
+ 1061  history
+ 1062  history > output.txt
+ 1063  history >output.txt
+ 1064  pwd
+ 1065  cd /
+ 1066  exit
+ 1067  pwd
+ 1068  history >dockercmd.txt

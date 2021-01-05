@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    app: box
+  name: box
+spec:
+  containers:
+  - image: busybox
+    name: box
+    command: [bin/sh, -c, 'i=0; while true; do  echo "$i :todays date: $(date)"; i=$((i+1)); sleep 2; done;']

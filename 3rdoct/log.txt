@@ -1,0 +1,78 @@
+LAST SEEN   TYPE      REASON      OBJECT        MESSAGE
+46m         Warning   Unhealthy   pod/nginx     Liveness probe failed: HTTP probe failed with statuscode: 404
+41m         Warning   BackOff     pod/nginx     Back-off restarting failed container
+39m         Normal    Scheduled   pod/busybox   Successfully assigned default/busybox to minikube
+38m         Normal    Pulling     pod/busybox   Pulling image "busybox"
+38m         Normal    Started     pod/busybox   Started container busybox
+38m         Normal    Pulled      pod/busybox   Successfully pulled image "busybox"
+38m         Normal    Created     pod/busybox   Created container busybox
+38m         Warning   BackOff     pod/busybox   Back-off restarting failed container
+33m         Normal    Scheduled   pod/busybox   Successfully assigned default/busybox to minikube
+33m         Normal    Pulling     pod/busybox   Pulling image "busybox"
+33m         Normal    Created     pod/busybox   Created container busybox
+33m         Normal    Pulled      pod/busybox   Successfully pulled image "busybox"
+33m         Normal    Started     pod/busybox   Started container busybox
+33m         Warning   BackOff     pod/busybox   Back-off restarting failed container
+27m         Normal    Scheduled   pod/busybox   Successfully assigned default/busybox to minikube
+27m         Normal    Pulling     pod/busybox   Pulling image "busybox"
+27m         Normal    Pulled      pod/busybox   Successfully pulled image "busybox"
+27m         Normal    Started     pod/busybox   Started container busybox
+27m         Normal    Created     pod/busybox   Created container busybox
+27m         Warning   BackOff     pod/busybox   Back-off restarting failed container
+26m         Normal    Scheduled   pod/busybox   Successfully assigned default/busybox to minikube
+26m         Normal    Pulling     pod/busybox   Pulling image "busybox"
+26m         Normal    Pulled      pod/busybox   Successfully pulled image "busybox"
+26m         Warning   Failed      pod/busybox   Error: failed to start container "busybox": Error response from daemon: OCI runtime create failed: container_linux.go:349: starting container process caused "exec: \"echo i am from busbox; sleep3600\": executable file not found in $PATH": unknown
+26m         Normal    Created     pod/busybox   Created container busybox
+25m         Normal    Pulling     pod/busybox   Pulling image "busybox"
+25m         Normal    Scheduled   pod/busybox   Successfully assigned default/busybox to minikube
+25m         Normal    Created     pod/busybox   Created container busybox
+25m         Normal    Pulled      pod/busybox   Successfully pulled image "busybox"
+25m         Warning   Failed      pod/busybox   Error: failed to start container "busybox": Error response from daemon: OCI runtime create failed: container_linux.go:349: starting container process caused "exec: \"echo i am from busbox; sleep3600;\": executable file not found in $PATH": unknown
+24m         Normal    Scheduled   pod/busybox   Successfully assigned default/busybox to minikube
+24m         Normal    Pulling     pod/busybox   Pulling image "busybox"
+24m         Normal    Pulled      pod/busybox   Successfully pulled image "busybox"
+24m         Normal    Created     pod/busybox   Created container busybox
+24m         Normal    Started     pod/busybox   Started container busybox
+24m         Warning   BackOff     pod/busybox   Back-off restarting failed container
+23m         Normal    Scheduled   pod/busybox   Successfully assigned default/busybox to minikube
+23m         Normal    Pulling     pod/busybox   Pulling image "busybox"
+23m         Normal    Pulled      pod/busybox   Successfully pulled image "busybox"
+23m         Normal    Created     pod/busybox   Created container busybox
+23m         Normal    Started     pod/busybox   Started container busybox
+23m         Normal    Killing     pod/busybox   Stopping container busybox
+22m         Normal    Scheduled   pod/busybox   Successfully assigned default/busybox to minikube
+22m         Normal    Pulling     pod/busybox   Pulling image "busybox"
+22m         Normal    Started     pod/busybox   Started container busybox
+22m         Normal    Pulled      pod/busybox   Successfully pulled image "busybox"
+22m         Normal    Created     pod/busybox   Created container busybox
+21m         Normal    Killing     pod/busybox   Stopping container busybox
+19m         Normal    Scheduled   pod/busybox   Successfully assigned default/busybox to minikube
+19m         Normal    Pulling     pod/busybox   Pulling image "busybox"
+19m         Normal    Created     pod/busybox   Created container busybox
+19m         Normal    Pulled      pod/busybox   Successfully pulled image "busybox"
+19m         Normal    Started     pod/busybox   Started container busybox
+19m         Warning   BackOff     pod/busybox   Back-off restarting failed container
+17m         Normal    Pulling     pod/busybox   Pulling image "busybox"
+18m         Normal    Scheduled   pod/busybox   Successfully assigned default/busybox to minikube
+17m         Normal    Started     pod/busybox   Started container busybox
+17m         Normal    Pulled      pod/busybox   Successfully pulled image "busybox"
+17m         Normal    Created     pod/busybox   Created container busybox
+17m         Warning   BackOff     pod/busybox   Back-off restarting failed container
+14m         Normal    Scheduled   pod/busybox   Successfully assigned default/busybox to minikube
+14m         Normal    Pulling     pod/busybox   Pulling image "busybox"
+14m         Normal    Pulled      pod/busybox   Successfully pulled image "busybox"
+14m         Normal    Created     pod/busybox   Created container busybox
+14m         Normal    Started     pod/busybox   Started container busybox
+11m         Normal    Killing     pod/busybox   Stopping container busybox
+8m14s       Normal    Pulling     pod/alpine    Pulling image "alpine"
+8m14s       Normal    Scheduled   pod/alpine    Successfully assigned default/alpine to minikube
+8m10s       Normal    Pulled      pod/alpine    Successfully pulled image "alpine"
+8m10s       Normal    Created     pod/alpine    Created container alpine
+8m10s       Normal    Started     pod/alpine    Started container alpine
+7m41s       Normal    Killing     pod/alpine    Stopping container alpine
+6m43s       Normal    Scheduled   pod/alpine    Successfully assigned default/alpine to minikube
+6m42s       Normal    Pulling     pod/alpine    Pulling image "alpine"
+6m38s       Normal    Pulled      pod/alpine    Successfully pulled image "alpine"
+6m38s       Normal    Started     pod/alpine    Started container alpine
+6m38s       Normal    Created     pod/alpine    Created container alpine

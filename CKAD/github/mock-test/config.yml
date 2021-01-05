@@ -1,0 +1,14 @@
+apiVersion: v1
+data:
+  player_initial_lives: "3"
+  ui_properties_file_name: "test"
+  game.properties: |
+   enermy.types=aliens,monsters
+   player.nax= 3
+  user-interface.properties: |
+   color.good=purple
+   color.bad=yello
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: config

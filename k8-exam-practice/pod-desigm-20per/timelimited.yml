@@ -1,0 +1,28 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  labels:
+   job: cronjob-limited-time
+  name: time-limited-job
+spec:
+  startingDeadlineSeconds: 17
+  jobTemplate:
+    metadata:
+      labels:
+       job: cronjob-limited-time
+      name: time-limited-job
+    spec:
+      template:
+        metadata:
+         labels:
+          job: cronjob-limited-time
+        spec:
+          containers:
+          - command:
+            - bin/sh
+            - -c
+            - date;echo hello from k8s
+            image: busybox
+            name: time-limited-job
+          restartPolicy: OnFailure
+  schedule: '* * * * *'

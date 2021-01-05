@@ -1,0 +1,21 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: box
+  labels:
+   run: busybox
+spec:
+  activeDeadlineSeconds: 30
+  template:
+    metadata:
+     labels:
+      run: busybox
+    spec:
+      containers:
+      - command:
+        - bin/sh
+        - -c
+        - while true; do echo hello; sleep 10;done
+        image: busybox
+        name: box
+      restartPolicy: Never

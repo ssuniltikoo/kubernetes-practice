@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: Service
+metadata:
+ labels:
+  app: count
+  tier: frontend
+ name: support
+spec:
+ ports:
+ - name: clientport
+   port: 80
+ selector:
+  tier: frontend
+ type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: count
+    tier: frontend
+  name: support
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+     tier: frontend
+  template:
+    metadata:
+      labels:
+        app: count
+        tier: frontend
+    spec:
+      containers:
+      - image: lrakai/microservices:counter-v1
+        name: counter
+        ports:
+        - containerPort: 80
+        env:
+        - name: API_URL
+          value: http://$(SERVER_SERVICE_HOST):$(SERVER_SERVICE_PORT_WEBSERVERPORT)
+      - image: lrakai/microservices:poller-v1
+        name: poller
+        env:
+        - name: API_URL
+          value: http://server:8080
+

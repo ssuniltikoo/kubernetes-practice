@@ -1,0 +1,55 @@
+kind: Service
+apiVersion: v1
+metadata:
+ name: db
+ labels:
+  app: multi-pods
+spec:
+ ports:
+ - port: 6379
+   protocol: TCP
+   name: redis
+ selector:
+  tier: data
+  layer: backend
+ type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: db
+ labels:
+  app: multi-pods
+  tier: data
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+   tier: data
+   layer: backend
+ template:
+  metadata:
+   labels:
+    app: multi-pods
+    tier: data
+    layer: backend
+  spec:
+   containers:
+   - name: redis
+     image: redis:latest
+     imagePullPolicy: IfNotPresent
+     ports:
+     - containerPort: 6379
+     livenessProbe:
+      tcpSocket:
+       port: redis
+      initialDelaySeconds: 15
+     readinessProbe:
+      exec:
+       command:
+       - redis-cli
+       - ping
+      initialDelaySeconds: 3
+      
+    
+

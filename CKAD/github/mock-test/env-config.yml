@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  confg.env: "var1=val1\n# this is a comment\n\var2=val2\n#anothercomment\n"
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: env-config

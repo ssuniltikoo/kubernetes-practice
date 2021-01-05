@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+ labels:
+  app: persistent-volume
+ name: myvolume
+spec:
+ storageClassName: normal
+ capacity:
+  storage: 10Gi
+ accessModes:
+ - ReadWriteMany
+ - ReadWriteOnce
+ hostPath:
+  path: /etc/foo

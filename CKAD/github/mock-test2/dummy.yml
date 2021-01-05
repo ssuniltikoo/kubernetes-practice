@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: dummy
+  name: dummy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dummy
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: dummy
+    spec:
+      volumes:
+      - name: log
+        emptyDir: {}
+      containers:
+      - image: busybox
+        name: busybox
+        volumeMounts:
+        - name: log
+          mountPath: var/log/
+        args:
+        - bin/sh
+        - while true; do date >> var/log/app.txt; sleep 10; done
+        resources: {}
+status: {}

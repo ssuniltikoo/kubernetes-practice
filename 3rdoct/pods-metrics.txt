@@ -1,0 +1,4 @@
+namespace1             pod1                                         0m           2Mi             
+namespace2             pod2                                         0m           2Mi             
+namespace3             pod3                                         0m           2Mi             
+namespace4             pod4                                         0m           2Mi             

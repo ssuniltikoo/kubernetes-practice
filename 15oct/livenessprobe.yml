@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    app: liveness
+  name: lp
+spec:
+  containers:
+  - image: nginx
+    name: lp
+    ports:
+    - containerPort: 80
+    command: ["bin/sh", "-c", "echo going to sleep; sleep 30; echo hello;"]
+    livenessProbe:
+     exec:
+      command:
+      - ls
+     initialDelaySeconds: 15
+     periodSeconds: 10
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}

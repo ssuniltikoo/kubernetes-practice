@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: nginx-pod
+  name: nginx-pod
+spec:
+ containers:
+ - image: nginx
+   name: nginx-pod
+   ports:
+   - containerPort: 80
+   command: ["/bin/sh"]
+   args: ["-c","while true; do echo ello; sleep 10; done"]
+ restartPolicy: OnFailure

@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: pod-pvc
+spec:
+ volumes:
+ - name: myconfig
+   configMap:
+    name: app-config
+ containers:
+ - image: mongo:4.0.6
+   name: mongo-db
+   ports:
+   - containerPort: 27017
+     protocol: TCP
+   volumeMounts:
+   - mountPath: /sunilconfig
+     name: myconfig
+    

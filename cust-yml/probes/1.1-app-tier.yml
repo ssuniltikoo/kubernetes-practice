@@ -1,0 +1,61 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-tier-probe-demo
+  labels:
+    app:  probe-demo
+spec:
+  ports:
+  - port: 8080
+  selector:
+    tier: app
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-tier-probe-demo
+  labels:
+    app:  probe-demo
+    tier: app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      tier: app  # see selector app line 11
+  template:  # pod template
+    metadata:
+      labels:
+        app:  probe-demo
+        tier: app
+    spec: #pod spec  
+      containers: # list of containers
+      - name: server # name of conatiner
+        image:  lrakai/microservices:server-v1 # image
+        ports:
+        - containerPort: 8080 # port
+          name: server # port name
+        env:  
+        - name: REDIS_URL
+          value:  redis://$(DATA_TIER_PROBE_DEMO_SERVICE_HOST):$(DATA_TIER_PROBE_DEMO_SERVICE_PORT_REDIS)      
+        - name: DEBUG
+          value:  express:*
+        livenessProbe:
+          httpGet:
+            path: /probe/liveness
+            port: server
+          initialDelaySeconds:  5
+        readinessProbe:
+          httpGet:
+            path: /probe/readiness
+            port: server
+          initialDelaySeconds:  3
+      initContainers:
+      - name: await-redis
+        image: lrakai/microservices:server-v1
+        env:
+        - name: REDIS_URL
+          value: redis://$(DATA_TIER_PROBE_DEMO_SERVICE_HOST):$(DATA_TIER_PROBE_DEMO_SERVICE_PORT_REDIS)
+        command:
+          - npm
+          - run-script
+          - await-redis

@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: nginx
+  name: nginx
+spec:
+ volumes:
+ - name: vol
+   emptyDir: {}
+ initContainers:
+ - args:
+   - /bin/sh
+   - -c
+   - wget -O /mydir/in.html http://kubernetes.io
+   image: busybox
+   name: busybox
+   volumeMounts:
+   - name: vol
+     mountPath: /mydir
+ containers:
+ - image: nginx
+   name: nginx
+   ports:
+   - containerPort: 80
+   volumeMounts:
+   - name: vol
+     mountPath: /usr/share/nginx/html
+

@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: probe-support-tier
+  labels:
+    app:  probe-demo
+    tier: support
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      tier: support
+  template:
+    metadata:
+      labels:
+        app:  probe-demo
+        tier: support
+    spec:
+      containers:
+      - name: counter
+        image:  lrakai/microservices:counter-v1
+        resources:
+          requests:
+            cpu:  5m # 5 milli-cpu 
+        env:
+        - name: API_URL
+          value:  http://app-tier-probe-demo.deployment:8080
+      - name: poller
+        image:  lrakai/microservices:poller-v1
+        resources:
+          requests:
+            cpu:  2m
+        env:
+        - name: API_URL
+          value:  http://app-tier-probe-demo:$(APP_TIER_PROBE_DEMO_SERVICE_PORT)

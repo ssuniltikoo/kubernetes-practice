@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: customerinfo-service
+spec:
+  selector:
+    app: customerinfo
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8085
+    nodePort: 31000
+  type: NodePort 

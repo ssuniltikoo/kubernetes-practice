@@ -1,0 +1,23 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  creationTimestamp: null
+  name: print
+spec:
+  jobTemplate:
+    metadata:
+      creationTimestamp: null
+      name: print
+    spec:
+      template:
+        metadata:
+          creationTimestamp: null
+        spec:
+          containers:
+          - image: busybox
+            name: print
+            command: ["bin/sh" , -c, "date; echo hellofrom k8s"]
+            resources: {}
+          restartPolicy: OnFailure
+  schedule: '*/1 * * * *'
+status: {}

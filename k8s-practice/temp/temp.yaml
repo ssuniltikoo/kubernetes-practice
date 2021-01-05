@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: support-tier
+ labels:
+  app: multi-pods
+  tier: support
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+   tier: support
+ template:
+  metadata:
+   labels:
+    tier: support
+    app: multi-pods
+  spec:
+   containers:
+   - name: counter
+     image: lrakai/microservices:counter-v1
+     env:
+     - name: API_URL
+       value: http://app-tier.deployments:8080
+   - name: poller
+     image: lrakai/microservices:counter-v1
+     env:
+     - name: API_URL
+       value: http://app-tier:$(APP_TIER_SERVICE_PORT)

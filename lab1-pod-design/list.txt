@@ -1,0 +1,19 @@
+total 136
+drwxr-xr-x 3 sohit sohit  4096 Aug 17 03:05 archive
+-rw-r--r-- 1 sohit sohit 20480 Aug 17 02:08 dummy2.txt
+-rw-r--r-- 1 sohit sohit   357 Aug 17 01:42 dummy3.txt
+-rw-r--r-- 1 sohit sohit   609 Aug 17 01:31 dummy.txt
+-rw-r--r-- 1 sohit sohit     0 Aug 17 03:21 err.txt
+-rw-r--r-- 1 sohit sohit    53 Aug  9 00:45 job.txt
+-rw-r--r-- 1 sohit sohit 19611 Aug 17 03:21 out.txt
+-rw-r--r-- 1 sohit sohit 40960 Aug 17 02:08 temp
+-rw-r--r-- 1 sohit sohit   252 Aug  9 01:04 test.yaml
+-rw-r--r-- 1 sohit sohit   411 Aug  9 00:01 web-server.yaml
+-rw-r--r-- 1 sohit sohit    45 Aug 17 01:26 xaa
+-rw-r--r-- 1 sohit sohit    35 Aug 17 01:26 xab
+-rw-r--r-- 1 sohit sohit    32 Aug 17 01:26 xac
+-rw-r--r-- 1 sohit sohit    42 Aug 17 01:26 xad
+-rw-r--r-- 1 sohit sohit    51 Aug 17 01:26 xae
+-rw-r--r-- 1 sohit sohit   111 Aug 17 01:26 xaf
+-rw-r--r-- 1 sohit sohit    33 Aug 17 01:26 xag
+-rw-r--r-- 1 sohit sohit     8 Aug 17 01:26 xah
